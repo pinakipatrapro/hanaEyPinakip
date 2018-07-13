@@ -1,0 +1,10 @@
+host = "https://api.recast.ai";
+port = 80; 
+description = "Recast natural language processing";
+useSSL = false;
+pathPrefix = "/v2/request";
+authType = none;
+useProxy = true;
+proxyHost = "proxy";
+proxyPort = 8080;
+timeout = 0;

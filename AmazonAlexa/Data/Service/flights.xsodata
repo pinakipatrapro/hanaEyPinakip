@@ -1,0 +1,6 @@
+service namespace "AmazonAlexa.Data.Service" {
+
+      "_SYS_BIC"."Pinaki.AmazonAlexa.Models/CA_FLIGHTS_BY_CARRIER" as "FLIGHTS" keys  
+      generate local "Id";
+
+  } 

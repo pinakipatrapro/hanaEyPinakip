@@ -1,0 +1,431 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt"
+	xmlns:f="sap.ui.layout.form"  xmlns:ui="sap.ui.table"
+	xmlns:semantic="sap.m.semantic" xmlns:suite="sap.suite.ui.commons" xmlns:u="sap.ui.unified"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="controllers.manageData">
+
+		<Page showHeader="false" class="pageBg">
+		<content>		
+		
+		
+<HBox id="headerHBox" width="100%" class="marginBottom2px breadcrumbBg" height="3rem">
+        <HBox class="sapUiTinyMarginBegin">
+		<Link id="homeLink" visible="true" text="{i18n>home}" class="clslinktext" press="goToHome"/>
+		<Label text="   /    " id="subHeaderLevelOneNode2" class="clslinktext sapUiTinyMarginBeginEnd" visible="true"/>
+		<Link id="tileName" visible="true" text="{i18n>tile1Title}" class="clslinktext" press="goToPlan"/>
+		<Label text="   /    " id="subHeaderLevelTwoNode2" class="clslinktext sapUiTinyMarginBeginEnd" visible="true"/>
+		<Link id="tabName" visible="true" text="{i18n>financialDataTab}" class="clslinktext" press="refreshSupplyChain"/>
+		</HBox>
+</HBox>
+
+<Bar class="sapuiSizeCompact barHgt2rem">
+ 	      <contentLeft>
+			 <Label text="Version:" class="whiteText" />
+			 <Select id="globalVersionSelector" class="sapUiSizeCondensed smallSelect" forceSelection="true" change="changeVersion" />
+		 </contentLeft>
+		 
+		 <contentRight>
+		  <Button id="uploadDataBtn" text="{i18n>uploadFin}" icon="sap-icon://upload" press="massUpload" class="whiteButton" />
+		  <Button id="downloadDTempateBtn" text="{i18n>downloadTemplateFin}" icon="sap-icon://download" press="downloadTemplate" class="whiteButton"/>
+		</contentRight>
+</Bar>
+
+	<IconTabBar
+		expanded="true" expandable="false"
+		id="idIconTabBar"
+		select="changeTabBreadcrumb"
+		class="sapUiResponsiveContentPadding sapUiSizeCompact iconTabContentNoPadding blackIconTab iconTab0marginTop">
+		<items>
+			<IconTabFilter
+				icon="sap-icon://lead"
+				iconColor="Negative"
+				design="Horizontal" 
+				text="{i18n>financialDataTab}" 
+				key="financialDataTab">
+				   <ScrollContainer id="financialDataTabScroll" visible="true" focusable="true" height="767px" vertical="true"> 
+				       <Table id="financialDataTab" items="{ path:'/'}" visible="true" class="sapUiSizeCompact darkTable" noDataText="Please Upload Data">	
+						  <columns>
+						<Column width="auto" mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>finHeirarchy3Dot}" />
+							</header>
+						</Column>
+						<Column width="auto" mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>function3Dot}" />
+							</header>
+						</Column>
+						<Column width="auto" hAlign="Center" mergeDuplicates="true" >
+							<header>
+								<Text text="{i18n>driver}" />
+							</header>
+						</Column>
+						<Column width="auto" hAlign="Center">
+							<header>
+								<Text text="{i18n>finHeirarchy4Dot}" />
+							</header>
+						</Column>
+						<Column width="auto" hAlign="Center" mergeDuplicates="true" >
+							<header>
+								<Text text="{i18n>function4Dot}" />
+							</header>
+						</Column>
+						<Column width="auto" hAlign="Center">
+							<header>
+								<Text text="{i18n>expenses}" />
+							</header>
+						</Column>
+						<Column width="auto" hAlign="Center">
+							<header>
+								<Text text="{i18n>noOfDriver}" />
+							</header>
+						</Column>
+						<Column width="auto" hAlign="Center" mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>totalExpenses}" />
+							</header>
+						</Column>
+						<Column width="auto" hAlign="Center" mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>totalNoOfDriver}" />
+							</header>
+						</Column>
+					</columns>
+					<ColumnListItem>
+			        	<Text text="{FH_3}" />
+						<Text text="{FUNCTION_3}" />
+						<Text text="{DRIVER}"  />
+						<Text text="{FH_4}" />
+					  <Text text="{FUNCTION_4}" />
+					  <Text text="{path:'EXP_AMOUNT', formatter: '.addDollars'}" />
+					  <Text text="{QDRIVER_ALLOC}" />
+					  <Text text ="{path:'Total_Expenses', formatter: '.addDollars'}" />
+					  <Text text="{path:'Total_QDRIVER', formatter: '.addComma'}" />
+					</ColumnListItem>
+				  </Table>
+				   </ScrollContainer>
+			</IconTabFilter> 
+				
+				
+			<IconTabSeparator icon="sap-icon://open-command-field" />
+			
+			
+			<IconTabFilter
+				icon="sap-icon://crm-service-manager"
+				iconColor="Negative"
+				design="Horizontal"
+				text="{i18n>serviceCatalogTab}"
+				key="serviceCatalogTab">
+				  <ScrollContainer id="serviceCatalogTabScroll" visible="true" focusable="true" height="723px" vertical="true">  
+						  	<Table id="serviceCatalogTab" items="{ path:'/'}" visible="true" class="sapUiSizeCompact darkTable" noDataText="Please Upload Data">	
+								  <columns>
+								<Column width="auto" mergeDuplicates="true">
+									<header>
+										<Text text="{i18n>level1ServiceTitle}" />
+									</header>
+								</Column>
+								<Column width="auto"  mergeDuplicates="true">
+									<header>
+										<Text text="{i18n>level2ServiceTitle}" />
+									</header>
+								</Column>
+								<Column width="auto"  >
+									<header>
+										<Text text="{i18n>level3ServiceTitle}" />
+									</header>
+								</Column>
+								<Column width="auto" hAlign="Center">
+									<header>
+										<Text text="{i18n>driver}" />
+									</header>
+								</Column>
+								<Column width="auto" hAlign="Center">
+									<header>
+										<Text text="{i18n>noOfDriver}" />
+									</header>
+								</Column>
+									<Column width="auto" hAlign="Center">
+									<header>
+										<Text text="{i18n>driverPerc}" />
+									</header>
+								</Column>
+								<Column width="auto" hAlign="Center">
+									<header>
+										<Text text="{i18n>serviceCost}" />
+									</header>
+								</Column>
+							</columns>
+							<ColumnListItem>
+					        	<Text text="{SCL1}" />
+								<Text text="{SCL2}" />
+								<Text text="{SCL3}"  />
+								<Text text="{DRIVER}" />
+							    <Input value="{QDRIVER}" width="6rem" change="serviceCatalogNumDriverChanged"  />
+							    	<Text text="{path:'DriverPerc', formatter: '.percentValue'}"  />
+								<Text text="{path:'ServiceCost', formatter: '.addDollars'}" />
+							</ColumnListItem>
+							     </Table>
+		     	   </ScrollContainer>
+			</IconTabFilter>
+				
+				
+			<IconTabSeparator icon="sap-icon://open-command-field" />
+			
+			
+			<IconTabFilter
+				icon="sap-icon://compare"
+				iconColor="Negative"
+				design="Horizontal"
+				text="{i18n>servicePriceCalcTab}"
+				key="servicePriceCalcTab">
+		<ScrollContainer id="servicePriceCalcTabScroll" visible="true" focusable="true" height="723px" vertical="true"> 
+		    <Table id="servicePriceCalcTab" noDataText="Please Upload Data" items="{ path:'/',
+				 sorter: {
+					path: 'PENT'
+				}}" visible="true" class="sapUiSizeCompact darkTable">	
+				  <columns>
+					<Column width="auto" mergeDuplicates="true">
+						<header>
+							<Text text="{i18n>providingEntity}" />
+						</header>
+					</Column>
+					<Column width="auto" mergeDuplicates="true">
+						<header>
+							<Text text="{i18n>blank}" />
+						</header>
+					</Column>
+					<Column width="auto" hAlign="Center" >
+						<header>
+							<Text text="{i18n>materialEntity}" />
+						</header>
+					</Column>
+					<Column width="auto" mergeDuplicates="true" >
+						<header>
+							<Text text="{i18n>service}" />
+						</header>
+					</Column>
+					<Column width="auto"  hAlign="Center">
+						<header>
+							<Text text="{i18n>criticalService}" />
+						</header>
+					</Column>
+					<Column width="auto" >
+						<header>
+							<Text text="{i18n>servicePerc}" />
+						</header>
+					</Column>
+					<Column width="auto" >
+						<header>
+							<Text text="{i18n>servicePrice}" />
+						</header>
+					</Column>
+					<Column width="auto" >
+						<header>
+							<Text text="{i18n>markupPerc}" />
+						</header>
+					</Column>
+					<Column width="auto" >
+						<header>
+							<Text text="{i18n>driver}" />
+						</header>
+					</Column>
+					<Column width="auto" >
+						<header>
+							<Text text="{i18n>noOfDriver}" />
+						</header>
+					</Column>
+				</columns>
+				<ColumnListItem>
+		        	<Text text="{PENT}" />
+					<Text text="{P_ENT_NAME}" />
+					<ToggleButton text="{MENT}" pressed="{path:'MENT', formatter: '.yesNoToggle'}"  press="onYesNoTogglePressSP" />
+					<Text text="{SCL2}" />
+					<ToggleButton text="{CS}" pressed="{path:'CS', formatter: '.yesNoToggle'}"   press="onYesNoTogglePressSP" />
+				    <Input value="{SERV_PCT}" width="50%" change="servicePercentChanged"  />
+				    <Text text="{path:'servicePrice', formatter: '.addDollars'}" />
+					<Input value="{SERV_MP}"  width="50%" change="markupPercentChanged" />
+					<Text text="{DRIVER_ALLOC}" />
+					<Text text="{QDRIVER_ALLOC}" />
+				</ColumnListItem>
+		     </Table>
+			</ScrollContainer>
+			</IconTabFilter>
+			
+			
+			<IconTabSeparator icon="sap-icon://open-command-field" />
+			
+			
+			<IconTabFilter
+				icon="sap-icon://compare"
+				iconColor="Negative"
+				design="Horizontal"
+				text="{i18n>costByLegalEntity}"
+				key="costByLegalEntityTab">
+				<ScrollContainer id="costByLegalEntityTabScroll" focusable="true" height="723px" vertical="true">
+		            <Table id="costByLegalEntityTab" class="sapUiSizeCompact darkTable InvisibleScrollbar"  noDataText="Please Upload Data"
+					 	items="{ path:'/'}" >
+			        <columns>
+						<Column width="auto"  mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>providingEntity}" />
+							</header>
+						</Column>
+						<Column width="auto"  mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>blank}" />
+							</header>
+						</Column>
+						<Column width="auto" >
+							<header>
+								<Text text="{i18n>driver}" />
+							</header>
+						</Column>
+						<Column width="auto"  mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>leID}" />
+							</header>
+						</Column>
+					<Column width="auto" mergeDuplicates="true"> 
+							<header>
+								<Text text="{i18n>leName}" />
+							</header>
+						</Column>
+					<Column width="auto">
+							<header>
+								<Text text="{i18n>noOfDriver}" />
+							</header>
+						</Column>
+					<Column width="auto">
+							<header>
+								<Text text="{i18n>driverPerc}" />
+							</header>
+						</Column>
+	 		    	<Column width="auto">
+							<header>
+								<Text text="{i18n>cost}" />
+							</header>
+				    	</Column>
+					<Column width="auto" mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>totalCost}" />
+							</header>
+						</Column>   
+					</columns>
+					<ColumnListItem>
+						<Text text="{PENT}" />
+						<Text text="{P_ENT_NAME}" />
+						<Text text="{DRIVER_ALLOC}" />
+						<Text text="{R_ENT}" />
+						<Text text="{R_ENT_NAME}" />
+					    <Input value="{QDRIVER_ALLOC}" editable="true" width="60%" change="costByLegalDriverAllocChanged" />
+						<Text text="{path:'DriverP', formatter: '.percentValue'}" />
+				 		<Text text="{path:'Cost', formatter: '.addDollars'}" />
+						<Text text="{path:'TOTALCOST', formatter: '.addDollars'}" />   
+					</ColumnListItem>
+				</Table>
+				</ScrollContainer>
+			</IconTabFilter>
+			
+			
+			<IconTabSeparator icon="sap-icon://open-command-field" visible="false"/>
+			
+			
+			<IconTabFilter
+				icon="sap-icon://compare"
+				iconColor="Negative"
+				design="Horizontal" visible="false"
+				text="{i18n>breakoutTab}"
+				key="breakoutTab">
+				
+					<ScrollContainer id="breakoutScroll" focusable="true" height="723px" vertical="true">
+		            <Table id="breakoutTab" class="sapUiSizeCompact darkTable InvisibleScrollbar"  noDataText="Please Upload Data"
+					 	items="{ path:'/'}" >
+			        <columns>
+						<Column width="auto"  mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>providingEntity}" />
+							</header>
+						</Column>
+						<Column width="auto"  mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>blank}" />
+							</header>
+						</Column>
+						<Column width="auto" >
+							<header>
+								<Text text="{i18n>driver}" />
+							</header>
+						</Column>
+						<Column width="auto"  mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>parentLeID}" />
+							</header>
+						</Column>
+						<Column width="auto"> 
+							<header>
+								<Text text="{i18n>parentLeName}" />
+							</header>
+						</Column>
+						<Column width="auto">
+							<header>
+								<Text text="{i18n>childLeID}" />
+							</header>
+						</Column>
+					<Column width="auto">
+							<header>
+								<Text text="{i18n>childLeName}" />
+							</header>
+						</Column>
+	 		    	<Column width="auto">
+							<header>
+								<Text text="{i18n>noOfDriver}" />
+							</header>
+						</Column>
+					<Column width="auto">
+							<header>
+								<Text text="{i18n>driverPerc}" />
+							</header>
+						</Column>
+	 		    	<Column width="auto">
+							<header>
+								<Text text="{i18n>cost}" />
+							</header>
+				    	</Column>
+					<Column width="auto" mergeDuplicates="true">
+							<header>
+								<Text text="{i18n>totalCost}" />
+							</header>
+						</Column>    
+					</columns>
+					<ColumnListItem>
+						<Text text="{ProvidingEntity}" />
+						<Text text="{ProvidingEntityID}" />
+						<Text text="{Driver}" />
+						<Text text="{LegalEntityID}" />
+						<Text text="{LegalEntity}" />
+					    <Input value="{DriverQ}" editable="true" width="60%" change="showInputChange" />
+						<Text text="{path:'DriverP', formatter: '.percentValue'}" />
+				 		<Text text="{path:'Cost', formatter: '.addDollars'}" />
+						<Text text="{path:'TOTALCOST', formatter: '.addDollars'}" />   
+					</ColumnListItem>
+				</Table>
+				</ScrollContainer>
+				   
+			</IconTabFilter>
+			
+		</items>
+	</IconTabBar>
+    
+		</content>
+		   <footer>
+			<OverflowToolbar>
+			 <Button type="Accept" id="createScenario" text="{i18n>createScenario}" visible="false" icon="sap-icon://add" class="smallBtn marginTop2px whiteButton sapUiSizeCompact" press="createNewScenario" />
+				<ToolbarSpacer/>
+		  <Button type="Reject" id="rejectBtn" icon="sap-icon://reset" text="{i18n>reset}" class="smallBtn marginTop2px whiteButton sapUiSizeCompact" press="resetTable" />
+		  <Button type="Accept" id="saveDataBtn" icon="sap-icon://save" text="{i18n>save}" class="smallBtn marginTop2px whiteButton sapUiSizeCompact" press="saveTableToHANA" />
+			</OverflowToolbar>
+		</footer>
+	</Page>
+	
+</core:View>

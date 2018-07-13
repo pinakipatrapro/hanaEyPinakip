@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="CA_SAMPLE_GEO_DATA" applyPrivilegeType="NONE" checkAnalyticPrivileges="false" defaultClient="$$client$$" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" translationRelevant="true" visibility="reportingEnabled" calculationScenarioType="TREE_BASED" dataCategory="CUBE" enforceSqlExecution="false" executionSemantic="UNDEFINED" outputViewType="Aggregation">
+  <descriptions defaultDescription="CA_SAMPLE_GEO_DATA"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="27"/>
+  <dataSources>
+    <DataSource id="GEO_DATA" type="DATA_BASE_TABLE">
+      <viewAttributes allViewAttributes="true"/>
+      <columnObject schemaName="PINAKIP" columnObjectName="GEO_DATA"/>
+    </DataSource>
+  </dataSources>
+  <calculationViews>
+    <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+      <descriptions/>
+      <viewAttributes>
+        <viewAttribute id="street"/>
+        <viewAttribute id="city"/>
+        <viewAttribute id="zip"/>
+        <viewAttribute id="state"/>
+        <viewAttribute id="beds"/>
+        <viewAttribute id="baths"/>
+        <viewAttribute id="sq__ft"/>
+        <viewAttribute id="type"/>
+        <viewAttribute id="sale_date"/>
+        <viewAttribute id="price"/>
+        <viewAttribute id="latitude"/>
+        <viewAttribute id="longitude"/>
+      </viewAttributes>
+      <calculatedViewAttributes>
+        <calculatedViewAttribute datatype="VARCHAR" id="COMPLETE_ADDRESS" length="300" expressionLanguage="COLUMN_ENGINE">
+          <formula>&quot;street&quot;+&quot;city&quot;+&quot;state&quot;+'Zip Code : '+&quot;zip&quot;</formula>
+        </calculatedViewAttribute>
+      </calculatedViewAttributes>
+      <input node="#GEO_DATA">
+        <mapping xsi:type="Calculation:AttributeMapping" target="street" source="street"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="city" source="city"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="zip" source="zip"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="state" source="state"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="beds" source="beds"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="baths" source="baths"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="sq__ft" source="sq__ft"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="type" source="type"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="sale_date" source="sale_date"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="price" source="price"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="latitude" source="latitude"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="longitude" source="longitude"/>
+      </input>
+    </calculationView>
+  </calculationViews>
+  <logicalModel id="Projection_1">
+    <descriptions/>
+    <attributes>
+      <attribute id="street" order="1" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="street"/>
+      </attribute>
+      <attribute id="city" order="2" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="city"/>
+      </attribute>
+      <attribute id="ZIP_DNS" hidden="true" order="3" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="zip"/>
+      </attribute>
+      <attribute id="state" order="4" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="state"/>
+      </attribute>
+      <attribute id="beds" order="5" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="beds"/>
+      </attribute>
+      <attribute id="baths" order="6" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="baths"/>
+      </attribute>
+      <attribute id="sq__ft" order="7" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="sq__ft"/>
+      </attribute>
+      <attribute id="type" order="8" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="type"/>
+      </attribute>
+      <attribute id="sale_date" order="9" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="sale_date"/>
+      </attribute>
+      <attribute id="price" order="10" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="price"/>
+      </attribute>
+      <attribute id="latitude" order="11" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="latitude"/>
+      </attribute>
+      <attribute id="longitude" order="12" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="longitude"/>
+      </attribute>
+      <attribute id="COMPLETE_ADDRESS" key="true" order="13" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="COMPLETE_ADDRESS"/>
+        <keyMapping columnObjectName="Projection_1" columnName="COMPLETE_ADDRESS"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes>
+      <calculatedAttribute id="ZIP" hidden="false" order="15" semanticType="empty" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="ZIP"/>
+        <keyCalculation datatype="INTEGER" expressionLanguage="COLUMN_ENGINE">
+          <formula>int(&quot;ZIP_DNS&quot;)</formula>
+        </keyCalculation>
+      </calculatedAttribute>
+    </calculatedAttributes>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures/>
+    <calculatedMeasures>
+      <measure id="COUNT" hidden="false" order="14" aggregationType="sum" measureType="simple" aggregatable="true" calculatedMeasureType="counter" datatype="INTEGER" expressionLanguage="COLUMN_ENGINE">
+        <descriptions defaultDescription="COUNT"/>
+        <exceptionAggregation exceptionAggregationType="countDistinct">
+          <attribute attributeName="COMPLETE_ADDRESS"/>
+        </exceptionAggregation>
+        <formula>1</formula>
+      </measure>
+    </calculatedMeasures>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="85"/>
+        <rectangleSize height="0" width="0"/>
+      </shape>
+      <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+        <upperLeftCorner x="40" y="210"/>
+        <rectangleSize height="-1" width="-1"/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>

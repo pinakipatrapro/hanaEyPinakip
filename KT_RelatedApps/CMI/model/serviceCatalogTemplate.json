@@ -1,0 +1,272 @@
+[
+ {
+   "SC_ID": 1,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Foreclosure Services",
+   "DRIVER": "SQFT",
+   "QDRIVER": 500,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 2,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Bankruptcy Services",
+   "DRIVER": "SQFT",
+   "QDRIVER": 100,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 3,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Recoveries Services",
+   "DRIVER": "SQFT",
+   "QDRIVER": 50,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 4,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Application Development",
+   "DRIVER": "SQFT",
+   "QDRIVER": 700,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 5,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Application Hosting",
+   "DRIVER": "SQFT",
+   "QDRIVER": 65,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 6,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Cloud Applications",
+   "DRIVER": "SQFT",
+   "QDRIVER": 100,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 7,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Acquire Talent",
+   "DRIVER": "SQFT",
+   "QDRIVER": 75,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 8,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Workforce Planning",
+   "DRIVER": "SQFT",
+   "QDRIVER": 100,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 9,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Leadership Planning and Development",
+   "DRIVER": "SQFT",
+   "QDRIVER": 120,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 10,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Foreclosure Services",
+   "DRIVER": "FTE",
+   "QDRIVER": 20,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 11,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Bankruptcy Services",
+   "DRIVER": "FTE",
+   "QDRIVER": 10,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 12,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Recoveries Services",
+   "DRIVER": "FTE",
+   "QDRIVER": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 13,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Application Development",
+   "DRIVER": "FTE",
+   "QDRIVER": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 14,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Application Hosting",
+   "DRIVER": "FTE",
+   "QDRIVER": 8,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 15,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Cloud Applications",
+   "DRIVER": "FTE",
+   "QDRIVER": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 16,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Acquire Talent",
+   "DRIVER": "FTE",
+   "QDRIVER": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 17,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Workforce Planning",
+   "DRIVER": "FTE",
+   "QDRIVER": 28,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 18,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Leadership Planning and Development",
+   "DRIVER": "FTE",
+   "QDRIVER": 17,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 19,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Foreclosure Services",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 1000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 20,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Bankruptcy Services",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 600,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 21,
+   "SCL1": "Operations",
+   "SCL2": "Collections Operations",
+   "SCL3": "Recoveries Services",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 200,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 22,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Application Development",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 350,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 23,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Application Hosting",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 100,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 24,
+   "SCL1": "Technology",
+   "SCL2": "Application Services",
+   "SCL3": "Cloud Applications",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 75,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 25,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Acquire Talent",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 290,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 26,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Workforce Planning",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 100,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "SC_ID": 27,
+   "SCL1": "Human Resources",
+   "SCL2": "Deliver Workforce Capability",
+   "SCL3": "Leadership Planning and Development",
+   "DRIVER": "Time Spent",
+   "QDRIVER": 90,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ }
+]

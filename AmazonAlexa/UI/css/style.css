@@ -1,0 +1,13 @@
+.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
+
+.sapMShellBrandingBar {
+    height: 0px; ! important
+}
+
+.sapMTB {
+    visibility: hidden;
+}

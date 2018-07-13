@@ -1,0 +1,15 @@
+PROCEDURE "PINAKIP"."Pinaki.IVAGO.DataLoad.Procedure::LOAD_GEO_DATA_RAW" () 
+	LANGUAGE SQLSCRIPT 
+	SQL SECURITY INVOKER 
+	DEFAULT SCHEMA PINAKIP
+	AS
+BEGIN
+	insert into  "PINAKIP"."IVAGO_GEO_DATA" 
+					select	
+						MANDT,
+						NR,
+						new ST_GEOMETRY('POINT(' || XML_LATITUDE || ' ' ||XML_LONGITUDE ||')', 4326).ST_Transform(3857) as GEO_ID
+					from "DB_USER_3"."analyticscloud.db.Ivago::WATP_TACSCMDATA";
+END;
+
+

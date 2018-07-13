@@ -1,0 +1,31 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	xmlns:f="sap.ui.layout.form">
+	
+   <Dialog stretchOnPhone="true" width="872px" type="Message"
+	title = "{i18n>scenarioConfiguration}"
+	state="Confirm" class="soberDialog sapUiSizeCompact">
+		
+		<content>
+		  <VBox alignItems="Center" justifyContent="Center">
+		       <HBox alignItems="Center" justifyContent="Center"  class="sapUiSmallMarginBottom">
+    		       <Text text="Select Base Version:" />
+    		       <Select class="sapUiSizeCondensed EYSelect clshtwidth" forceSelection="true" />
+    		   </HBox>
+		  
+    		   <HBox alignItems="Center" justifyContent="Center">
+    		      <Text text="Scenario Name:" />
+    		      <Input placeholder="xxxx" value="" width="6rem" liveChange="checkForDuplicacies"/>
+    		   </HBox>
+		 <Text visible="false" text="Saving with existing scenario will be unsuccessful!" class="warningText" />
+		 </VBox>
+		</content>
+		<buttons>
+		   <Button text="{i18n>save}" class="sapUiSizeCompact"   press="saveNewScenario" />
+		   	<Button text="{i18n>Cancel}" class="sapUiSizeCompact" press="closeCreateScenario" />
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

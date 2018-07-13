@@ -1,0 +1,15 @@
+<mvc:View controllerName="pinaki.ey.com.AlexaDisplay.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page showHeader="false" title="{i18n>title}" id="idResultContent">
+			<content>
+				<MessagePage showHeader="false" icon="https://forthesmarthome.com/wp-content/uploads/2017/06/Echo-Dot.gif"
+					text="Alexa Display"
+					description="Ask Alexa to view the results here"
+				/>
+			</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

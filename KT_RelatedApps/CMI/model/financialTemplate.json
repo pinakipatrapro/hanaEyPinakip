@@ -1,0 +1,92 @@
+[
+ {
+   "FH_3": "JMP",
+   "FUNCTION_3": "Real Estate",
+   "DRIVER": "SQFT",
+   "FH_4": "JMPK",
+   "FUNCTION_4": "Real Estate Devlopemnt",
+   "EXP_AMOUNT": 600000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "FH_3": "JMP",
+   "FUNCTION_3": "Real Estate",
+   "DRIVER": "SQFT",
+   "FH_4": "JMPN",
+   "FUNCTION_4": "Real Estate Investments",
+   "EXP_AMOUNT": 400000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "FH_3": "JMP",
+   "FUNCTION_3": "Real Estate",
+   "DRIVER": "SQFT",
+   "FH_4": "JMPZ",
+   "FUNCTION_4": "Real Esate Services Ops",
+   "EXP_AMOUNT": 200000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "FH_3": "VMQ",
+   "FUNCTION_3": "IT",
+   "DRIVER": "FTE",
+   "FH_4": "VMQA",
+   "FUNCTION_4": "Techonolgy Channels",
+   "EXP_AMOUNT": 150000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "FH_3": "VMQ",
+   "FUNCTION_3": "IT",
+   "DRIVER": "FTE",
+   "FH_4": "VMQC",
+   "FUNCTION_4": "GWBT Loan Processing",
+   "EXP_AMOUNT": 350000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "FH_3": "VMQ",
+   "FUNCTION_3": "IT",
+   "DRIVER": "FTE",
+   "FH_4": "VMQS",
+   "FUNCTION_4": "GWBT Secured Lending",
+   "EXP_AMOUNT": 300000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "FH_3": "VHE",
+   "FUNCTION_3": "Operations",
+   "DRIVER": "Time Spent",
+   "FH_4": "VHEA",
+   "FUNCTION_4": "Banking Operations",
+   "EXP_AMOUNT": 400000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "FH_3": "VHE",
+   "FUNCTION_3": "Operations",
+   "DRIVER": "Time Spent",
+   "FH_4": "VHEB",
+   "FUNCTION_4": "GWIM Client Services",
+   "EXP_AMOUNT": 100000,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "FH_3": "VHE",
+   "FUNCTION_3": "Operations",
+   "DRIVER": "Time Spent",
+   "FH_4": "n/a",
+   "FUNCTION_4": "n/a",
+   "EXP_AMOUNT": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ }
+]

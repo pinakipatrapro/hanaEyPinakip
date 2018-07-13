@@ -1,0 +1,8 @@
+service namespace "AmazonAlexa.Data.Service" {
+ 
+      "_SYS_BIC"."Pinaki.AmazonAlexa.Models/CA_SUPERSTORE_SALES"  as "SuperstoreSales" keys  
+      generate local "Id";  
+      
+      "_SYS_BIC"."Pinaki.AmazonAlexa.Models/CA_ALEXA_RESPONSE" as "LiveResponse" keys  
+      generate local "Id";
+  }

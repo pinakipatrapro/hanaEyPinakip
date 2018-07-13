@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Critical Service Pricing</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/1.44.14/resources/sap-ui-cachebuster/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{
+			"Man.Man": "./",
+			"controllers": "./controller",
+			"views": "./view"
+			}'>
+		</script>
+		
+		    <script src="lib/jszip.js"></script>
+        <script src="lib/xlsx.js"></script>
+        <script src="lib/xlsx.full.min.js"></script>
+      
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+		/*	sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						width: "100%",
+						name : "Man.Man"
+					})
+				}).placeAt("content");
+			});*/
+			  var oComponentContainer = new sap.ui.core.ComponentContainer({
+            height: "100%",
+            name: "Man.Man"
+        });
+        oComponentContainer.placeAt("content");
+		</script>
+		
+			
+	</head>
+
+	<body class="sapUiBody" id="content" rootUiArea>
+	</body>
+
+</html>

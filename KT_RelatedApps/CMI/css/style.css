@@ -1,0 +1,530 @@
+.titleHBox{  
+    background: #eceaea;
+    	z-index: 1;
+}
+
+.pageBg{
+	background: aliceblue !important;
+}
+
+.pageBg>section{
+	overflow-y: hidden !important;
+}
+
+.iconTabContentNoPadding>div:nth-child(2)>div{
+	padding: 0rem !important;
+}
+
+.warningText{
+    color: red;
+}
+
+.showInputChange>input{
+    color: red !important;
+}
+
+.showInputChange>span{
+    background: red !important;
+}
+
+.showInputChange>span>span{
+    color: white !important;
+}
+
+.headerFont{
+    font-weight: bold !important;
+	font-size: 15px !important;
+}
+.clsLogoImgStyle
+{
+    display: inline !important;
+    padding-top: 1px !important;
+        margin-left:10% !important;
+}
+
+.smallHgtBar{
+	height: 3rem !important;
+}
+
+.smallHgtBar>div:nth-child(2)>div{
+	height: 2.5rem !important;
+}
+
+.blackBg{
+	background-color: black !important;
+}
+
+.barHgt2rem{
+	height: 2.5rem !important;
+	box-shadow: none !important;
+	background: #336699 !important;
+}
+
+.whiteButton>span>span:nth-child(1){
+	color: white !important;
+}
+
+.whiteButton>span>span:nth-child(2){
+	color: white !important;
+}
+
+.headerBarBg{
+	background-color: #172545 !important;
+}
+
+.headerText{
+	color: white !important;
+	font-size: 22px !important;
+}
+
+.whiteText{
+	color: white !important;
+}
+
+
+
+.marginTop2px{
+	    margin-top: 2px !important;
+}
+
+.marginBottom10px{
+	margin-bottom: 10px;
+}
+
+ .InvisibleScrollbar::-webkit-scrollbar {
+   /* width: 0px !important;
+    height: 0px !important;*/
+    display: none;
+}
+.InvisibleScrollbar:hover::-webkit-scrollbar {
+    display: inline;
+    width: 8px !important; 
+}
+
+.InvisibleScrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.breadcrumbBg{
+	  background: #336699  !important;
+}
+.clslinktext{
+    color: aliceblue  !important;
+    font-size: 1rem   !important;
+    font-weight: 550   !important;
+    margin-top: 0.5rem !important;
+}
+
+.smallSelect{
+	    height: 2rem;
+}
+
+.smallSelect>label{
+	outline: none !important;
+}
+
+.smallSelect>label:focus{
+	outline: none !important;
+}
+
+.InvisibleScrollbar::-webkit-scrollbar-thumb {
+  background-color: #336699 !important;
+  outline: 1px solid slategrey;
+  border-radius: 0px;
+}
+
+.sapMLIBShowSeparator>td {
+     border-top: 0px solid #e5e5e5;
+}
+
+/*For black iconTab  */
+
+.blackIconTab>div>div>div>div>div{
+     /* color: #696c6c !important; */         /* changed on 27/10/2017  */
+   /*   color : #172545 !important;*/
+     text-shadow: none !important; 
+    font-weight: bold !important;
+}
+
+.blackIconTab>div>div>div>div>div:focus{
+       outline: none !important;
+}
+
+html.sap-desktop .sapMITBItem:focus .sapMITBFilterIcon, html.sap-desktop .sapMITBTextOnly .sapMITBItem:focus .sapMITBText, html.sap-desktop .sapMITBItem:focus.sapMITBAll {
+    outline: none !important;
+}
+
+.blackIconTab>div>div>div>div>div:focus{
+   color: black    !important;
+     text-shadow: none !important; 
+     font-weight: bold !important;
+     outline: none !important;   /* changed on 27/10/2017  */
+}
+
+
+.blackIconTab>div{  
+ background:  aliceblue    !important;
+    border-bottom: none !important;
+}
+
+/*.blackIconTab>div:nth-child(1){  
+  box-shadow: inset 0 -0.25rem 0 -0.125rem #AFB1B2  !important;
+}
+*/
+.blackIconTab>div:nth-child(2)>div{  /*imp*/
+    background-color: rgba(0, 0, 0, 0)  !important;
+    background: rgba(0, 0, 0, 0)  !important;
+}
+
+.setupTableMarginTop{
+    margin-top: -2rem !important;
+}
+
+.blackIconTab>div>span{
+    color: black !important;
+    padding-top: 0px !important;
+}
+
+.blackIconTab>div>button>span>span{
+    color: black !important;
+        padding-top: 0px !important;
+}
+
+.iconTab0marginTop>div>div>div{
+    margin-top: 0px !important;
+}
+
+/*  ------------------------------------CSS FOR MAIN VIEW ---------------------------------------------------- */
+
+.for1>section
+    {
+     background-color: #336699 !important;
+     }
+     
+
+.clsPageHeader{
+    background-color:#336699 !important;
+} 
+.clsPageHeader>header                                 
+   {
+     background-color:rgba(0, 0, 0, 0.2) !important;
+    }   
+.clsPageHeading {
+    text-decoration: none !important;
+    color: white !important;
+    margin-left:3% !important;
+}
+
+.fontsize24px{
+    font-size : 24px !important;
+}
+
+.top2
+{
+  margin-top: .5%;   
+}
+
+
+.clsBTNForSN{
+    height:3rem !important;
+}
+
+.clsBTNForSN>span>span{
+    color:white !important;
+}
+.removeOutline{
+        outline: none !important;
+}
+
+.clsMarginHeaderNode
+{
+    margin-left: 10px;
+}
+
+.clsMargin5px
+{
+    margin-left : 5px;
+}
+
+.clsMaginDetailbtnView>span>span{           /*modified*/
+    color: black !important;
+}
+
+.clsSecHg>div:nth-child(2){
+    width:100% !important;
+    height:100%!important;
+}
+.clsSecHg>div:nth-child(2)>div{
+    width:100% !important;
+    height:100%!important;
+}
+
+
+
+.clsStyleForText2{
+margin-top:8%;    
+}
+
+.clsStyleForText2>div:nth-child(1)>label{
+    color: #2a6fb2 !important;
+    font-size: 4.5rem !important;
+}
+
+.clsStyleForText2>div:nth-child(2)>label{
+    color: #2a6fb2 !important;
+    font-size: 1.5rem !important;
+}
+
+
+.sapContrast .sapTntNavLIItem>.sapUiIcon {
+    color: white !important;
+     font-size: 1.3rem;
+    margin-top: -4px;
+}
+
+.sapContrast .sapTntNavLI span.sapTntNavLIGroupIcon: focus :active{
+    outline: none !important;
+}
+
+.sapContrast .sapTntNavLIGroup {
+    border-bottom: 1px solid white !important;
+}
+
+
+.filterHideScroll>section:hover ::-webkit-scrollbar {
+    display: inline !important;
+    width: 8px !important; 
+      -ms-overflow-style: inherit;
+}
+
+
+.filterHideScroll>section ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+}
+
+.filterHideScroll>section ::-webkit-scrollbar-thumb {
+  background-color: #C0C0C0 !important;
+  outline: 1px solid slategrey !important;
+  border-radius: 0px !important;
+}
+
+
+.clsSideExpColl1{
+    width:13rem !important;    
+}
+
+.clsSideExpColl1>div{
+    width: 13rem !important;
+}
+
+.clsSideExpColl2{
+    width:3rem !important;
+}
+
+.sapContrast .sapTntNavLIItemSelected .sapTntNavLIItem {     /*to make side nav sub items black on selection*/
+   background-color: black !important;
+}
+
+/*.sapContrast .sapTntNavLIItem {
+    background-color: rgba(0,0,0,0.4) !important;
+}*/
+
+
+.clsSideNav>div>div>ul>li>div{         /*for each item of side nav*/
+    height:3.5rem;
+    border-bottom: 1px solid #ffffff !important;
+    /*background-color: #1f3d5c !important*/
+    background-color: #29527a !important;
+}
+
+.clsSideNav>div>div>ul>li>div>span{   /*for icons*/
+     color: white !important;
+     font-size: 1.3rem;
+    margin-top: -4px;
+}
+
+.clsSideNav>div>div>ul>li>div>span:focus :active{   /*for icons*/
+    outline: none !important;
+}
+
+.clsSideNav>div>div>ul>li>div>span:nth-child(1){
+    font-size:1.3rem !important;
+}
+.clsSideNav>div>div>ul>li>div>span:nth-child(2){
+    font-size:0.9rem;
+}
+
+.clsSideNav>div>div>ul>li>ul>li{   /* sub item of an item  */
+    border-bottom: 1px solid #ffffff !important;
+    background-color: #1f3d5c !important
+}
+
+.clsSideNav>div>div>ul>li>ul>li>span{
+    padding-left: 1rem !important;
+}
+
+
+.clsBoxNavSide>div>div{    /*for light blue border of side nav*/
+    border-right: 1px solid #3f6b96 !important;
+}
+
+.clsSideNav>div>div>ul>li>div{
+    height:3.5rem;
+}
+.clsSideNav>div>div>ul>li>div>span:nth-child(1){
+    font-size:1.3rem !important;
+}
+.clsSideNav>div>div>ul>li>div>span:nth-child(2){
+    font-size:0.9rem;
+}
+.clsBoxNavSide>div>div
+{
+    border-right: 0px solid white !important;
+}
+
+.analyticsCloudBg{
+	 background-image: url("analyticsCloudScreenshot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clsBacgImg{
+    background-image: url("clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clsBackgImgForPage{
+    background-image: url("clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:lighten;
+    margin-left:4px;
+}
+/* -------------------------- CLS FOR HOME VIEW --------------------------------------------- */
+
+
+.boxDesign{
+    background-color:rgba(255,255,255,0.6);
+    width: 20%;
+    height: 80%;
+    margin: 3%;
+    transition: width 0.2s, height 0.2s !important;
+    transition-timing-function: linear !important;
+    border-radius: 0.7rem;
+}
+
+.boxDesign:hover{
+    background-color:rgba(255,255,255,1);
+}
+
+.clsLabl{
+    margin:12% !important;
+}
+
+.clsLabl>div>label{
+    color:black;
+}
+
+.clsLabl>div:nth-child(1)>label{
+    font-weight:bold !important;
+    font-size:1.5rem !important;
+}
+
+.clsLabl>div:nth-child(2)>label{
+    font-size:1.2rem !important;
+    font-style:italic;
+}
+
+.clsLabl>div:nth-child(3)>label{
+    font-size:1.2rem !important;
+    text-align:center !important;
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+
+.clsButtonDes{
+    width: 4rem !important;
+    height: 3rem !important;
+    background-color: rgb(42, 111, 178) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    color: white !important;
+    font-size: 30px !important;
+    outline: none !important;
+}
+
+.clsButtonDes>span{
+ width: 4rem !important;
+    height: 3rem !important;
+    background-color: rgb(42, 111, 178) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    color: white !important;
+    font-size: 30px !important;
+    outline: none !important;
+}
+.clsButtonDes>span>span{
+ width: 4rem !important;
+    height: 3rem !important;
+    background-color: rgb(42, 111, 178) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    color: white !important;
+    font-size: 30px !important;
+    outline: none !important;
+}
+
+
+.quickGuideBtn{
+     background-color:rgba(255,255,255,0.6) !important;
+    margin-right: 5rem !important;
+    margin-bottom: 1rem !important;
+       border-radius: 4px !important;
+}
+
+.quickGuideBtn>span>span{
+     outline: none !important;
+}
+
+.homeFooter{
+    background: transparent !important;
+    border-top: none !important;
+     
+}
+
+.quickGuideBtn>span .sapUiIcon::before{
+    color: black !important;
+    font-weight: bold !important; 
+}
+
+.quickGuideBtn>span>span{
+    color: black !important;
+    font-weight: bold !important;
+}
+
+/* ----------------- SERVICE COST ----------------------- */
+
+.darkTable>table>tbody>tr:nth-child(odd){
+	background-color: aliceblue !important;
+}
+
+.darkTable>table>tbody>tr:nth-child(even
+){
+	background-color: #e4eff9 !important;
+}
+
+.darkTable>table>thead>tr>th{
+	background: #336699  !important;
+}
+.darkTable>table>thead>tr>th>span{
+	color: #ffffff !important;
+}
+.darkTable>table>tbody>tr{
+	background: transparent !important;
+}
+.darkTable>table>tbody>tr>td>span{
+	color: #336699   !important;
+}

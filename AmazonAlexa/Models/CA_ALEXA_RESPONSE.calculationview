@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="CA_ALEXA_RESPONSE" applyPrivilegeType="NONE" checkAnalyticPrivileges="false" defaultClient="$$client$$" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" translationRelevant="true" visibility="internal" calculationScenarioType="SCRIPT_BASED" dataCategory="DEFAULT" enforceSqlExecution="false" executionSemantic="UNDEFINED" runWithInvokerPrivileges="true" scriptParametersCaseSensitive="true">
+  <descriptions defaultDescription="CA_ALEXA_RESPONSE"/>
+  <defaultSchema schemaName="PINAKIP"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="27"/>
+  <dataSources/>
+  <calculationViews>
+    <calculationView xsi:type="Calculation:SqlScriptView" id="Script_View">
+      <descriptions/>
+      <viewAttributes>
+        <viewAttribute datatype="BLOB" id="RESPONSE"/>
+        <viewAttribute datatype="VARCHAR" id="RESPONSE_TEXT" length="5000"/>
+        <viewAttribute datatype="VARCHAR" id="MODEL_NAME" length="1000"/>
+        <viewAttribute datatype="VARCHAR" id="SERVICE_URL" length="1000"/>
+      </viewAttributes>
+      <calculatedViewAttributes/>
+      <definition> 
+ /********* Begin Procedure Script ************/ 
+ BEGIN 
+ 	 var_out = 
+ 	 			select 
+					&quot;RESPONSE&quot;,
+					&quot;RESPONSE_TEXT&quot;,
+					&quot;MODEL_NAME&quot;,
+					&quot;SERVICE_URL&quot;
+				 from &quot;PINAKIP&quot;.&quot;ALEXA_DISPLAY&quot;
+				 where created_by = (select current_user from dummy)
+				 and STATUS &lt;> 'X'; 
+
+END /********* End Procedure Script ************/</definition>
+    </calculationView>
+  </calculationViews>
+  <logicalModel id="Script_View">
+    <descriptions/>
+    <attributes>
+      <attribute id="RESPONSE" order="1">
+        <descriptions defaultDescription="RESPONSE"/>
+        <keyMapping columnObjectName="Script_View" columnName="RESPONSE"/>
+      </attribute>
+      <attribute id="RESPONSE_TEXT" order="2">
+        <descriptions defaultDescription="RESPONSE_TEXT"/>
+        <keyMapping columnObjectName="Script_View" columnName="RESPONSE_TEXT"/>
+      </attribute>
+      <attribute id="MODEL_NAME" order="3">
+        <descriptions defaultDescription="MODEL_NAME"/>
+        <keyMapping columnObjectName="Script_View" columnName="MODEL_NAME"/>
+      </attribute>
+      <attribute id="SERVICE_URL" order="4">
+        <descriptions defaultDescription="SERVICE_URL"/>
+        <keyMapping columnObjectName="Script_View" columnName="SERVICE_URL"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures/>
+    <calculatedMeasures/>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="85"/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>

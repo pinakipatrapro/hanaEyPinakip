@@ -1,0 +1,37 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	xmlns:f="sap.ui.layout.form">
+	
+   <Dialog stretchOnPhone="true" width="872px" type="Message"
+	title = "{i18n>saveVersion}"
+	state="Confirm" class="soberDialog sapUiSizeCompact">
+		
+		<content>
+		  <VBox alignItems="Center" justifyContent="Center">
+		       <HBox alignItems="Center" justifyContent="Center"  class="sapUiSmallMarginBottom">
+    		       <RadioButtonGroup columns="2" selectedIndex="1" select="radioBtnOfSaveVersionChgd">
+        				<buttons>
+        					<RadioButton text="{i18n>overwriteExisting}"  class="sapUiSmallMarginEnd"/>
+        					<RadioButton text="{i18n>newVersion}"/>
+        				</buttons>
+		        	</RadioButtonGroup>
+    		   </HBox>
+		  
+    		   <HBox alignItems="Center" justifyContent="Center">
+    		      <Label text="{i18n>enterVersionName}" class="sapUiTinyMarginEnd" />
+    		       <Select visible="false" class="sapUiSizeCondensed EYSelect clshtwidth" forceSelection="true" />
+    		      <Input placeholder="xxxx" value="" width="6rem" liveChange="checkForDuplicacies"/>
+    		   </HBox>
+		 <Text visible="false" text="You are going to override an existing version!" class="warningText" />
+		 </VBox>
+		</content>
+		<buttons>
+		   <Button text="{i18n>save}" class="sapUiSizeCompact"   press="gotVersionName" />
+		   	<Button text="{i18n>Cancel}" class="sapUiSizeCompact" press="cancelSaveVersion" />
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>
+

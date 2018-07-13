@@ -1,0 +1,14 @@
+[
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "Parent_ENT": 6750,
+   "Parent_ENT_NAME": "Northern Trading Co.",
+    "Child_ENT": 6750,
+   "Child_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": " -   ",
+   "PERIOD": 2018,
+   "Version": "Base_Scenario"
+ }
+]

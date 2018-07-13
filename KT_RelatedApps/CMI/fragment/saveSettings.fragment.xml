@@ -1,0 +1,29 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+		xmlns:u="sap.ui.unified"
+	xmlns:f="sap.ui.layout.form">
+   <Dialog stretchOnPhone="true" width="872px" type="Message"
+	title = "{i18n>MassUploader}"
+	state="Confirm" class="soberDialog sapUiSizeCompact">
+
+		<content>
+			<u:FileUploader
+			id="massUploader"
+			name="myFileUpload"
+			uploadUrl="upload/"
+			width="400px"
+		
+			placeholder="{i18n>fileUploaderPlaceholder}"
+			tooltip="{i18n>fileUploaderDescription}"
+			change="onChangeFile"
+			uploadComplete="handleUploadComplete"/>
+		</content>
+		<buttons>
+		   <Button text="{i18n>Load}" class="sapUiSizeCompact"   press="massUploadConfirm" />
+		   	<Button text="{i18n>Cancel}" class="sapUiSizeCompact" press="closeMassUploader" />
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>
+

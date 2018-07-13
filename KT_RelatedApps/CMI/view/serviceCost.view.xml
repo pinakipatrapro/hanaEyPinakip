@@ -1,0 +1,207 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt"
+	xmlns:f="sap.ui.layout.form"  xmlns:ui="sap.ui.table"
+	xmlns:semantic="sap.m.semantic" xmlns:suite="sap.suite.ui.commons" xmlns:u="sap.ui.unified"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="controllers.serviceCost">
+
+		<Page showHeader="false" class="pageBg">
+		<content>		
+		
+		
+<HBox id="headerHBox" width="100%" class="marginBottom2px breadcrumbBg" height="3rem">
+        <HBox class="sapUiTinyMarginBegin">
+		<Link id="homeLink" visible="true" text="{i18n>home}" class="clslinktext" press="goToHome"/>
+		<Label text="   /    " class="clslinktext sapUiTinyMarginBeginEnd" visible="true"/>
+		<Link id="tileName" visible="true" text="{i18n>tile2Title}" class="clslinktext" press=""/>
+		<Label text="   /    " class="clslinktext sapUiTinyMarginBeginEnd" visible="true"/>
+		<Link id="tabName" visible="true" text="{i18n>serviceCostCalculation}" class="clslinktext" press=""/>
+		</HBox>
+
+</HBox>
+
+	<IconTabBar
+		id="idIconTabBarMulti" expandable="false" select="changeTabBreadcrumb"
+		class="sapUiResponsiveContentPadding sapUiSizeCompact iconTabContentNoPadding blackIconTab iconTab0marginTop sapUiNoMarginTop">
+		<items>
+			<IconTabFilter text="{i18n>serviceCostCalculation}" key="serviceCostCalculation">
+			 <ScrollContainer id="serviceCostScroll" visible="true" focusable="true" height="820px" vertical="true"> 
+			 <Bar class="sapUiSmallMarginBottom sapuiSizeCompact barHgt2rem">
+			<!--	<contentLeft>
+						<u:FileUploader
+						id="fileUploader"
+						name="myFileUpload"
+						uploadUrl="upload/"
+						placeholder="{i18n>fileUploaderPlaceholder}"
+						tooltip="{i18n>fileUploaderPlaceholder}"
+						change="onChangeFile"
+						uploadComplete="handleUploadComplete"
+						class="sapUiSizeCompact smallBtnOfFileUploader" />
+					 <Button text="Preview" tooltip="{i18n>UploadButtonTooltip}"  class="smallBtn marginTop2px sapUiSizeCompact" press="onSubmitUpload" />
+               	</contentLeft> -->
+				<contentRight>
+				      <Label text="Version:" />
+			        <Select id="serviceVersionSelector" class="sapUiSizeCondensed EYSelect clshtwidth" forceSelection="true" change="changeVersion" />
+				     <Button icon="sap-icon://save" tooltip="{i18n>UploadButtonTooltip}"  class="smallBtn marginTop2px sapUiSizeCompact" press="saveSCCToHana" />
+				</contentRight>
+			</Bar>
+			 <Table id="sccTab" items="{ path:'/',
+			 sorter: {
+				path: 'PROVIDING_ENTITY_ID'
+			}}" visible="true" class="sapUiSizeCompact darkTable">	
+			  <columns>
+			<Column width="auto" mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>ProvidingEntity}" />
+				</header>
+			</Column>
+			<Column width="auto" mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>blank}" />
+				</header>
+			</Column>
+			<Column width="auto" hAlign="Center" >
+				<header>
+					<Text text="{i18n>MaterialEntity}" />
+				</header>
+			</Column>
+			<Column width="auto" mergeDuplicates="true" >
+				<header>
+					<Text text="{i18n>Level2Service}" />
+				</header>
+			</Column>
+			<Column width="auto"  hAlign="Center">
+				<header>
+					<Text text="{i18n>CriticalServiceDim}" />
+				</header>
+			</Column>
+			<Column width="auto" >
+				<header>
+					<Text text="{i18n>Service%}" />
+				</header>
+			</Column>
+			<Column width="auto" >
+				<header>
+					<Text text="{i18n>Markup%}" />
+				</header>
+			</Column>
+			<Column width="auto" >
+				<header>
+					<Text text="{i18n>DriverLW}" />
+				</header>
+			</Column>
+		<!--		<Column width="auto" >
+				<header>
+					<Text text="{i18n>ServiceCost}" />
+				</header>
+			</Column>
+				<Column width="auto" >
+				<header>
+					<Text text="{i18n>ServiceCostMarkup}" />
+				</header>
+			</Column>
+			<Column width="auto" >
+				<header>
+					<Text text="{i18n>ServicePrice}" />
+				</header>
+			</Column> -->
+		</columns>
+		<ColumnListItem>
+        	<Text text="{PROVIDING_ENTITY_ID}" />
+			<Text text="{PROVIDING_ENTITY_NAME}" />
+			<ToggleButton text="{MaterialEntity}" pressed="{path:'MaterialEntity', formatter: '.autoPressTab1Toggle'}"  press="onTab1TogglePress" />
+			<Text text="{SERVICE_NAME}" />
+				<ToggleButton text="{Critical}" pressed="{path:'Critical', formatter: '.autoPressTab1Toggle'}"   press="onTab1TogglePress" />
+		
+			<Input value="{PERCENT_SERVICE}" width="50%" change="showInputChange"  />
+			<Input value="{MARKUP_PERCENT}" width="50%" change="showInputChange"  />
+			<Text text="{Driver}" />
+		<!--	<Text text="{ServiceCost}" />
+			<Text text="{ServiceCostMarkup}"/>
+				<Text text="{Service_Price}" /> -->
+		</ColumnListItem>
+		     </Table>
+			</ScrollContainer>
+			</IconTabFilter>
+			
+			<IconTabFilter text = "{i18n>costByLegalEntity}" key="costByLegalEntity">
+				<ScrollContainer id="cspTableScroll" focusable="true" height="820px" vertical="true">
+				<Bar class="sapUiSmallMarginBottom sapuiSizeCompact barHgt2rem">
+				<contentRight>
+				      <Label text="Version:" />
+					 <Select id="costVersionSelector" class="sapUiSizeCondensed EYSelect clshtwidth" forceSelection="true" change="changeVersion" />
+				     <Button icon="sap-icon://save" tooltip="{i18n>UploadButtonTooltip}"  class="smallBtn marginTop2px sapUiSizeCompact" press="saveSCCToHana" />
+				</contentRight>
+			</Bar>
+	
+		 <Table id="cspTable" class="sapUiSizeCompact darkTable InvisibleScrollbar" 
+		 	items="{ path:'/'}" >
+        <columns>
+			<Column width="auto"  mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>ProvidingEntity}" />
+				</header>
+			</Column>
+			<Column width="auto"  mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>blank}" />
+				</header>
+			</Column>
+			<Column width="auto" >
+				<header>
+					<Text text="{i18n>Driver}" />
+				</header>
+			</Column>
+			<Column width="auto"  mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>LegalEntityNo}" />
+				</header>
+			</Column>
+			<Column width="auto"> 
+				<header>
+					<Text text="{i18n>LeName}" />
+				</header>
+			</Column>
+			<Column width="auto">
+				<header>
+					<Text text="{i18n>NoOfDriver}" />
+				</header>
+			</Column>
+		<Column width="auto">
+				<header>
+					<Text text="{i18n>DriverPerc}" />
+				</header>
+			</Column>
+	<!--			<Column width="auto">
+				<header>
+					<Text text="{i18n>Cost}" />
+				</header>
+			</Column>
+			<Column width="auto" mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>TotalCost}" />
+				</header>
+			</Column>   -->
+		</columns>
+		<ColumnListItem>
+			<Text text="{ProvidingEntity}" />
+			<Text text="{ProvidingEntityID}" />
+			<Text text="{Driver}" />
+			<Text text="{LegalEntityID}" />
+			<Text text="{LegalEntity}" />
+		    <Input value="{DriverQ}" editable="true" width="60%" change="showInputChange" />
+			<Text text="{path:'DriverP', formatter: '.makePercent'}" />
+	<!--		<Text text="{path:'Cost', formatter: '.addDollars'}" />
+			<Text text="{path:'TOTALCOST', formatter: '.addDollars'}" />   -->
+		</ColumnListItem>
+	</Table>
+	</ScrollContainer>
+			</IconTabFilter>
+					    	
+		</items>
+	</IconTabBar>  
+        
+		</content>
+	</Page>
+	
+</core:View>

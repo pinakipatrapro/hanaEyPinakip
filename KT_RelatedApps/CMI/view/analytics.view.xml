@@ -1,0 +1,30 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt"
+	xmlns:f="sap.ui.layout.form"  xmlns:ui="sap.ui.table"
+	xmlns:semantic="sap.m.semantic" xmlns:suite="sap.suite.ui.commons" xmlns:u="sap.ui.unified"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="controllers.analytics">
+
+		<Page showHeader="false" class="analyticsCloudBg">
+		<content>		
+		
+		
+<HBox id="headerHBox" width="100%" class="marginBottom2px breadcrumbBg" height="3rem">
+        <HBox class="sapUiTinyMarginBegin">
+		<Link id="homeLink" visible="true" text="{i18n>home}" class="clslinktext" press="goToHome"/>
+		<Label text="   /    " id="subHeaderLevelOneNode2" class="clslinktext sapUiTinyMarginBeginEnd" visible="true"/>
+		<Link id="tileName" visible="true" text="{i18n>tile2Title}" class="clslinktext" press="goToPlan"/>
+		<Label text="   /    " id="subHeaderLevelTwoNode2" class="clslinktext sapUiTinyMarginBeginEnd" visible="true"/>
+		<Link id="tabName" visible="true" text="{i18n>serviceCostCalculation}" class="clslinktext" press="refreshSupplyChain"/>
+		</HBox>
+
+</HBox>
+                
+                
+           <html:iframe target="_top" src="https://be-ey.eu1.sapbusinessobjects.cloud/sap/fpa/ui/tenants/024/app.html#;view_id=story;storyId=805AF55A9835EA27E10000000A4E73C2;forceOpenView=true">
+            </html:iframe> 
+            
+		</content>
+	</Page>
+	
+</core:View>

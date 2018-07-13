@@ -1,0 +1,189 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt"
+	xmlns:f="sap.ui.layout.form"  xmlns:ui="sap.ui.table"
+	xmlns:semantic="sap.m.semantic" xmlns:suite="sap.suite.ui.commons" xmlns:u="sap.ui.unified"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="controllers.View1">
+
+		<Page showHeader="false" class="pageBg">
+		<content>		
+			<Bar class="headerBarBg whiteText smallHgtBar">
+				<contentLeft>
+					 <Image src="img/EY-Logo.gif" height="40px" width="40px" press="goToHome" class="clsLogoImgStyle sapUiTinyMarginBegin"/> 
+               	</contentLeft>
+				<contentMiddle>
+				    <Label text="Planning Scenario: BAC Demo" class="headerText"/>
+				</contentMiddle>
+			</Bar>
+       
+       
+        <!--	 <HBox width="100%" class="locChartTabHeader EYLightBackground sapUiSizeCompact">
+                       <HBox width="90%" alignItems="Center" justifyContent="Center">
+                           <Label text=" " class="txtFont sapUiTinyMarginEnd"/>
+                       </HBox>
+                         <HBox alignItems="Center" justifyContent="Center">
+                         <SearchField id="searchFieldSupply" placeholder="{i18n>SearchValuesInTable}" liveChange="onSearchTable" width="90%" height="30px" class="sapUiSmallMargin searchBarHeight" />
+                         <Button id="clearAllSupplyFilters" tooltip="{i18n>ClearAllFilters}" icon="sap-icon://reset" class="clsMaxBtn sapUiSizeCompact" type="Transparent" visible="true" press="resetMap"/>
+                        </HBox>
+              </HBox> --> 
+     	<IconTabBar
+		id="idIconTabBarMulti" expandable="false"
+		class="sapUiResponsiveContentPadding sapUiSizeCompact iconTabContentNoPadding blackIconTab iconTab0marginTop sapUiNoMarginTop">
+		<items>
+			<IconTabFilter text="Service Cost Calculation">
+			 <Bar class="sapUiSmallMarginBottom sapuiSizeCompact barHgt2rem">
+				<contentLeft>
+						<u:FileUploader
+						id="fileUploader"
+						name="myFileUpload"
+						uploadUrl="upload/"
+						placeholder="{i18n>fileUploaderPlaceholder}"
+						tooltip="{i18n>fileUploaderPlaceholder}"
+						change="onChangeFile"
+						uploadComplete="handleUploadComplete"
+						class="sapUiSizeCompact smallBtnOfFileUploader" />
+					 <Button text="Preview" tooltip="{i18n>UploadButtonTooltip}"  class="smallBtn marginTop2px sapUiSizeCompact" press="onSubmitUpload" />
+               	</contentLeft>
+				<contentRight>
+				     <Button text="Save to HANA" tooltip="{i18n>UploadButtonTooltip}"  class="smallBtn marginTop2px sapUiSizeCompact" press="saveSCCToHana" />
+				</contentRight>
+			</Bar>
+			
+			 <Table id="sccTab" items="{ path:'/'}" visible="true" class="sapUiSizeCompact darkTable">	
+			  <columns>
+			<Column mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>ProvidingEntity}" />
+				</header>
+			</Column>
+			<Column mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>blank}" />
+				</header>
+			</Column>
+			<Column hAlign="Center" >
+				<header>
+					<Text text="{i18n>MaterialEntity}" />
+				</header>
+			</Column>
+			<Column mergeDuplicates="true" >
+				<header>
+					<Text text="{i18n>Level2Service}" />
+				</header>
+			</Column>
+			<Column hAlign="Center">
+				<header>
+					<Text text="{i18n>CriticalServiceDim}" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="{i18n>ServicePrice}" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="{i18n>DriverLW}" />
+				</header>
+			</Column>
+		
+		</columns>
+		<ColumnListItem>
+        	<Text text="{ProvidingEntity}" />
+			<Text text="{ProvidingEntityDesc}" />
+		<!--	<Text text="{Materinalentity}" />-->
+			<ToggleButton text="{Materinalentity}" pressed="{path:'Materinalentity', formatter: '.autoPressTab1Toggle'}"  press="onTab1TogglePress" />
+			<Text text="{Level2Service}" />
+		<!--	<Text text="{CriticalServiceDim}" />-->
+				<ToggleButton text="{CriticalServiceDim}" pressed="{path:'CriticalServiceDim', formatter: '.autoPressTab1Toggle'}"   press="onTab1TogglePress" />
+			<Text text="{ServicePrice}" />
+			<Text text="{DriverLW}" />
+		</ColumnListItem>
+		     </Table>
+		         
+				
+			</IconTabFilter>
+			
+			<IconTabFilter text = "Cost by Legal Entity">
+				<Bar class="sapUiSmallMarginBottom sapuiSizeCompact barHgt2rem">
+				<contentRight>
+				     <Button text="Save to HANA" tooltip="{i18n>UploadButtonTooltip}"  class="smallBtn marginTop2px sapUiSizeCompact" press="saveCSPToHana" />
+				</contentRight>
+			</Bar>
+		<ScrollContainer id="cspTableScroll" focusable="true" height="820px" vertical="true">
+		 <Table id="cspTable" class="sapUiSizeCompact darkTable InvisibleScrollbar" 
+		 	items="{ path:'/'}" >
+        <columns>
+			<Column mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>ProvidingEntity}" />
+				</header>
+			</Column>
+			<Column mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>blank}" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="{i18n>Driver}" />
+				</header>
+			</Column>
+			<Column mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>LegalEntityNo}" />
+				</header>
+			</Column>
+			<Column > 
+				<header>
+					<Text text="{i18n>LeName}" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="{i18n>NoOfDriver}" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="{i18n>DriverPerc}" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="{i18n>Cost}" />
+				</header>
+			</Column>
+			<Column mergeDuplicates="true">
+				<header>
+					<Text text="{i18n>TotalCost}" />
+				</header>
+			</Column>
+		</columns>
+		<ColumnListItem>
+			<Text text="{ProvidingEntity}" />
+			<Text text="{ProvidingEntityID}" />
+			<Text text="{Driver}" />
+			<Text text="{LegalEntityID}" />
+			<Text text="{LegalEntity}" />
+		    <Input value="{DriverQ}" editable="true" width="60%" change="driverValueChanged"/>
+			<Text text="{DriverPerc}" />
+			<Text text="{Cost}" />
+			<Text text="{TotalCost}" />
+		</ColumnListItem>
+	</Table>
+	</ScrollContainer>
+			</IconTabFilter>
+			
+			<IconTabFilter text="SAC">
+			<!--	<core:HTML height="1200px" width="800px" id="htmlCont" preferDOM="true"> 
+				</core:HTML>-->
+			</IconTabFilter>		    	
+		</items>
+	</IconTabBar>  
+  
+        
+		</content>
+	</Page>
+	
+</core:View>

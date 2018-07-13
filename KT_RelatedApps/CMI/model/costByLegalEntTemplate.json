@@ -1,0 +1,2432 @@
+[
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 100,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 175,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 9,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 6750,
+   "R_ENT_NAME": "Northern Trading Co.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 75,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 9,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 115,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 45,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1880,
+   "R_ENT_NAME": "Banco Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 8,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 8,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 10,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 35,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 60,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 40,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1881,
+   "R_ENT_NAME": "Consumer Direct LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 8,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 6,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 20,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 4,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 50,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 50,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 80,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 25,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 85,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 40,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2875,
+   "R_ENT_NAME": "Eastern Ops Co",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 10,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 10,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 6,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 20,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 90,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 26,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 70,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 40,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 150,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1182,
+   "R_ENT_NAME": "Waterton LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 51,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 25,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 40,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 75,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 4,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 4,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 6,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 10,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 60,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 180,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 7,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1380,
+   "R_ENT_NAME": "Vista Inc.",
+   "QDRIVER_ALLOC": 120,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 55,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 50,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 150,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 4,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 50,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 4,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 60,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 40,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 225,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 7,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 2375,
+   "R_ENT_NAME": "Triforce NA",
+   "QDRIVER_ALLOC": 130,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 40,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 3,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 8,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 70,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 7,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 43,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 20,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 19,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 50,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 1,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 40,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 20,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 70,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 20,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 150,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 7,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1132,
+   "R_ENT_NAME": "Matico LLC",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 60,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 3375,
+   "P_ENT_NAME": "Northern Trading Co.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 26,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 86,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 5,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1382,
+   "P_ENT_NAME": "Banco Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 40,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 35,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 8,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1880,
+   "P_ENT_NAME": "Consumer Direct LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 90,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 50,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2875,
+   "P_ENT_NAME": "Eastern Ops Co",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 110,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 4,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1182,
+   "P_ENT_NAME": "Waterton LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 50,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 125,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1380,
+   "P_ENT_NAME": "Vista Inc.",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 30,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 2,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 2375,
+   "P_ENT_NAME": "Triforce NA",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 15,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 115,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1132,
+   "P_ENT_NAME": "Matico LLC",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of foreclosures",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of apps",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ },
+ {
+   "PENT": 1080,
+   "P_ENT_NAME": "Southern Holdings",
+   "DRIVER_ALLOC": "# of FTE",
+   "R_ENT": 1080,
+   "R_ENT_NAME": "Southern Holdings",
+   "QDRIVER_ALLOC": 0,
+   "PERIOD": 2018,
+   "VERSION": "Base_Scenario"
+ }
+]

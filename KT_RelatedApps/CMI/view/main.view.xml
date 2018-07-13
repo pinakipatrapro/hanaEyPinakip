@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:c="sap.ui.commons" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt"
+	xmlns:semantic="sap.m.semantic" xmlns:suite="sap.suite.ui.commons" xmlns:u="sap.ui.unified"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="controllers.main">
+
+		<Page id="detailWindowPage" showHeader="true" class="for1 clsPageHeader EYtop1 clsScrollCut">   <!-- had clsPageHeader earlier for white title bg -->
+		    <customHeader id="idMainCustomHeader">
+                    <Bar class="EYtop1">
+                        <contentLeft>
+                            <VBox>
+                                <HBox class="menuButton sapUiSizeCompact top2">
+                                 <Button id="sidNavButton" class="clsBTNForSN EYButtonBlack" press="handleSideNav" icon="sap-icon://menu2" visible="true"/>  
+                                    
+                                   <HBox class="titleMargin"> 
+                                        <Link  press="goToHome" class="removeOutline fontsize24px clsPageHeading EYPageHeading" text="{i18n>appTitle}" />
+                                    </HBox>
+                                
+                                    
+                                    <Text wrapping="false" text="" class="clsMarginHeaderNode clsFontColorsubHead"/>
+                                    <Text wrapping="false" text=""   id="subHeaderLevelOne"  class="clsFontColorsubHead" visible="false"/>
+                                    <Text wrapping="false" text="  >   "   id="subHeaderLevelOneNode" visible="false" class="clsFontColorsubHead clsMargin5px"/>
+                                    <HBox class="addWidth"><Text wrapping="false"  text=""   id="subHeaderLevelTwo" visible="false" class="clsFontColorsubHead clsMargin5px"/></HBox>
+                                    <Text wrapping="false" text="  >   "  id="subHeaderLevelTwoNode" visible="false" class="clsFontColorsubHead clsMargin5px"/>
+                                    <Text wrapping="false"  text=""   id="subHeaderLevelThree" visible="false"  class="clsFontColorsubHead clsMargin5px"/>
+                                </HBox>
+                                
+                            </VBox>
+                        </contentLeft>
+                        <contentRight>
+                           <Image src="img/EY-Logo.gif" height="40px" width="40px" press="fnNavHome" class="clsLogoImgStyle"/> 
+                            <HBox class="clsMaginDetailbtnView" visible="false">
+                            <Button id="btnFilter" icon="sap-icon://filter" visible="true" class="clsMaginDetailbtnView" press="fnViewFilters"/>
+                            <Button id="btnFilterClear" icon="sap-icon://clear-filter" visible="true" class="clsMaginDetailbtnView"  press="fnClearFilters"/>
+                            </HBox>
+                        </contentRight>
+                    </Bar>
+                </customHeader>
+			    
+<HBox id="t1" height="100%" class="clsSecHg">
+	 <VBox id="idVboxSideNav" height="100%" class="clsHg clsBoxNavSide">
+<tnt:SideNavigation id="sideNavigation" expanded="true" height="100%" class="EYsideNavBg clsSideNav clsSideExpColl1">
+        <tnt:item>
+            <tnt:NavigationList itemSelect="navigateToSelectedPage">
+                <tnt:NavigationListItem
+                        text="{i18n>home}"
+                        icon="sap-icon://home">
+                </tnt:NavigationListItem>
+                
+                    <tnt:NavigationListItem
+                        text="{i18n>tile1Title}"
+                        icon="sap-icon://database">
+                </tnt:NavigationListItem>
+                
+                <tnt:NavigationListItem
+                        text="{i18n>tile3Title}"
+                        icon="sap-icon://unwired">
+                </tnt:NavigationListItem>
+               
+            </tnt:NavigationList>
+        </tnt:item>
+    </tnt:SideNavigation>  
+	   </VBox>
+
+			
+			<NavContainer
+			id="navContainerBox"
+			class="navContainerControl EYBackground">
+			<pages>
+			<Page id="contentVBox" >
+			</Page>
+			</pages>
+			</NavContainer>
+				</HBox>
+			</Page>
+	
+</core:View>

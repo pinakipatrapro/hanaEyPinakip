@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="CA_SUPERSTORE_SALES" applyPrivilegeType="ANALYTIC_PRIVILEGE" checkAnalyticPrivileges="true" defaultClient="crossClient" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" translationRelevant="true" visibility="reportingEnabled" calculationScenarioType="TREE_BASED" dataCategory="CUBE" enforceSqlExecution="false" executionSemantic="UNDEFINED" outputViewType="Aggregation">
+  <descriptions defaultDescription="CA_SUPERSTORE_SALES"/>
+  <defaultSchema schemaName="PINAKIP"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="33"/>
+  <dataSources>
+    <DataSource id="SUPERSTORE_SALES" type="DATA_BASE_TABLE">
+      <viewAttributes allViewAttributes="true"/>
+      <columnObject schemaName="PINAKIP" columnObjectName="SUPERSTORE_SALES"/>
+    </DataSource>
+  </dataSources>
+  <calculationViews>
+    <calculationView xsi:type="Calculation:ProjectionView" id="Projection_2">
+      <descriptions/>
+      <viewAttributes>
+        <viewAttribute id="Row_ID"/>
+        <viewAttribute id="Order_ID"/>
+        <viewAttribute id="Order_Date"/>
+        <viewAttribute id="Ship_Date"/>
+        <viewAttribute id="Ship_Mode"/>
+        <viewAttribute id="Customer_ID"/>
+        <viewAttribute id="Customer_Name"/>
+        <viewAttribute id="Segment"/>
+        <viewAttribute id="Country"/>
+        <viewAttribute id="City"/>
+        <viewAttribute id="State"/>
+        <viewAttribute id="Postal_Code"/>
+        <viewAttribute id="Region"/>
+        <viewAttribute id="Product_ID"/>
+        <viewAttribute id="Category"/>
+        <viewAttribute id="Sub-Category"/>
+        <viewAttribute id="Product_Name"/>
+        <viewAttribute id="Sales"/>
+        <viewAttribute id="Tax_%"/>
+        <viewAttribute id="Tax_Amount"/>
+        <viewAttribute id="Cost_Price"/>
+        <viewAttribute id="Quantity"/>
+        <viewAttribute id="Discount"/>
+        <viewAttribute id="Profit"/>
+      </viewAttributes>
+      <calculatedViewAttributes/>
+      <input node="#SUPERSTORE_SALES">
+        <mapping xsi:type="Calculation:AttributeMapping" target="Row_ID" source="Row ID"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Order_ID" source="Order ID"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Order_Date" source="Order Date"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Ship_Date" source="Ship Date"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Ship_Mode" source="Ship Mode"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Customer_ID" source="Customer ID"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Customer_Name" source="Customer Name"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Segment" source="Segment"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Country" source="Country"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="City" source="City"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="State" source="State"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Postal_Code" source="Postal Code"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Region" source="Region"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Product_ID" source="Product ID"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Category" source="Category"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Sub-Category" source="Sub-Category"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Product_Name" source="Product Name"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Sales" source="Sales"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Tax_%" source="Tax %"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Tax_Amount" source="Tax Amount"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Cost_Price" source="Cost Price"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Quantity" source="Quantity"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Discount" source="Discount"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Profit" source="Profit"/>
+      </input>
+    </calculationView>
+    <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+      <descriptions/>
+      <viewAttributes>
+        <viewAttribute id="Profit"/>
+        <viewAttribute id="Discount"/>
+        <viewAttribute id="Quantity"/>
+        <viewAttribute id="Cost_Price"/>
+        <viewAttribute id="Tax_Amount"/>
+        <viewAttribute id="Sales"/>
+        <viewAttribute id="Product_Name"/>
+        <viewAttribute id="Sub-Category"/>
+        <viewAttribute id="Category"/>
+        <viewAttribute id="Region"/>
+        <viewAttribute id="Postal_Code"/>
+        <viewAttribute id="State"/>
+        <viewAttribute id="City"/>
+        <viewAttribute id="Country"/>
+        <viewAttribute id="Segment"/>
+        <viewAttribute id="Customer_Name"/>
+        <viewAttribute id="Ship_Mode"/>
+        <viewAttribute id="Customer_ID"/>
+        <viewAttribute id="Ship_Date"/>
+        <viewAttribute id="Order_Date"/>
+        <viewAttribute id="Order_ID"/>
+      </viewAttributes>
+      <calculatedViewAttributes/>
+      <input node="#Projection_2">
+        <mapping xsi:type="Calculation:AttributeMapping" target="Profit" source="Profit"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Discount" source="Discount"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Quantity" source="Quantity"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Cost_Price" source="Cost_Price"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Tax_Amount" source="Tax_Amount"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Sales" source="Sales"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Product_Name" source="Product_Name"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Sub-Category" source="Sub-Category"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Category" source="Category"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Region" source="Region"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Postal_Code" source="Postal_Code"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="State" source="State"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="City" source="City"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Country" source="Country"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Segment" source="Segment"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Customer_Name" source="Customer_Name"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Ship_Mode" source="Ship_Mode"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Customer_ID" source="Customer_ID"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Ship_Date" source="Ship_Date"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Order_Date" source="Order_Date"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="Order_ID" source="Order_ID"/>
+      </input>
+    </calculationView>
+  </calculationViews>
+  <logicalModel id="Projection_1">
+    <descriptions/>
+    <attributes>
+      <attribute id="productname" order="7" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Product_Name"/>
+      </attribute>
+      <attribute id="subcategory" order="8" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Sub-Category"/>
+      </attribute>
+      <attribute id="category" order="9" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Category"/>
+      </attribute>
+      <attribute id="region" order="10" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Region"/>
+      </attribute>
+      <attribute id="postalcode" order="11" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Postal_Code"/>
+      </attribute>
+      <attribute id="state" order="12" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="State"/>
+      </attribute>
+      <attribute id="city" order="13" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="City"/>
+      </attribute>
+      <attribute id="country" order="14" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Country"/>
+      </attribute>
+      <attribute id="segment" order="15" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Segment"/>
+      </attribute>
+      <attribute id="customername" order="16" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Customer_Name"/>
+      </attribute>
+      <attribute id="shipmode" order="17" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Ship_Mode"/>
+      </attribute>
+      <attribute id="customerid" order="18" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Customer_ID"/>
+      </attribute>
+      <attribute id="shipdate" order="19" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Ship_Date"/>
+      </attribute>
+      <attribute id="orderdate" order="20" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Order_Date"/>
+      </attribute>
+      <attribute id="orderid" order="21" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions/>
+        <keyMapping columnObjectName="Projection_1" columnName="Order_ID"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures>
+      <measure id="discount" order="1" semanticType="amount" aggregationType="sum" measureType="amount">
+        <descriptions/>
+        <fixedCurrency>USD</fixedCurrency>
+        <measureMapping columnObjectName="Projection_1" columnName="Discount"/>
+      </measure>
+      <measure id="profit" order="2" semanticType="amount" aggregationType="sum" measureType="amount">
+        <descriptions/>
+        <fixedCurrency>USD</fixedCurrency>
+        <measureMapping columnObjectName="Projection_1" columnName="Profit"/>
+      </measure>
+      <measure id="quantity" order="3" semanticType="quantity" aggregationType="sum" measureType="quantity">
+        <descriptions/>
+        <fixedUnit>Units</fixedUnit>
+        <measureMapping columnObjectName="Projection_1" columnName="Quantity"/>
+      </measure>
+      <measure id="costprice" order="4" semanticType="amount" aggregationType="sum" measureType="amount">
+        <descriptions/>
+        <fixedCurrency>USD</fixedCurrency>
+        <measureMapping columnObjectName="Projection_1" columnName="Cost_Price"/>
+      </measure>
+      <measure id="taxamount" order="5" semanticType="amount" aggregationType="sum" measureType="amount">
+        <descriptions/>
+        <fixedCurrency>USD</fixedCurrency>
+        <measureMapping columnObjectName="Projection_1" columnName="Tax_Amount"/>
+      </measure>
+      <measure id="sales" order="6" semanticType="amount" aggregationType="sum" measureType="amount">
+        <descriptions/>
+        <fixedCurrency>USD</fixedCurrency>
+        <measureMapping columnObjectName="Projection_1" columnName="Sales"/>
+      </measure>
+    </baseMeasures>
+    <calculatedMeasures>
+      <measure id="ebida" hidden="false" order="22" semanticType="amount" aggregationType="sum" measureType="amount" datatype="DECIMAL" expressionLanguage="COLUMN_ENGINE" length="31" scale="5">
+        <descriptions defaultDescription="ebida"/>
+        <fixedCurrency>USD</fixedCurrency>
+        <formula>&quot;taxamount&quot;+&quot;profit&quot;</formula>
+      </measure>
+    </calculatedMeasures>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="100"/>
+        <rectangleSize height="0" width="0"/>
+      </shape>
+      <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+        <upperLeftCorner x="30" y="220"/>
+        <rectangleSize height="-1" width="-1"/>
+      </shape>
+      <shape expanded="true" modelObjectName="Projection_2" modelObjectNameSpace="CalculationView">
+        <upperLeftCorner x="30" y="380"/>
+        <rectangleSize height="-1" width="-1"/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:id="_HmF_AHqSEeikfaQON2ecdw" name="LOAD_GEO_DATA" generateProcedure="true" generateTask="false" targetSchema="PINAKIP">
+  <annotations xmi:id="_HmF_AXqSEeikfaQON2ecdw" key="sap.afm.layout">
+    <annotations xmi:id="_HmF_AnqSEeikfaQON2ecdw" key="x" value="10"/>
+    <annotations xmi:id="_HmF_A3qSEeikfaQON2ecdw" key="y" value="10"/>
+  </annotations>
+  <annotations xmi:id="_HmF_BHqSEeikfaQON2ecdw" key="sap.afm.palette" value="">
+    <annotations xmi:id="_HmF_BXqSEeikfaQON2ecdw" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="_fTBuYHqSEeikfaQON2ecdw" key="sap.afm.nodeType" value="ContainerNode"/>
+  <annotations xmi:id="_fTgPgHqSEeikfaQON2ecdw" key="sap.afm.nodeInputs"/>
+  <annotations xmi:id="_fTwuMHqSEeikfaQON2ecdw" key="sap.afm.nodeOutputs"/>
+  <tableMappings xmi:id="_T4b6YHqSEeikfaQON2ecdw" source="_OPhxKHqSEeikfaQON2ecdw" target="_SfNdoHqSEeikfaQON2ecdw">
+    <attributeMappings xmi:id="_T4b6YXqSEeikfaQON2ecdw" source="_OPhxKXqSEeikfaQON2ecdw" target="_SfNdoXqSEeikfaQON2ecdw"/>
+    <attributeMappings xmi:id="_T4b6YnqSEeikfaQON2ecdw" source="_OPhxLHqSEeikfaQON2ecdw" target="_SfNdpXqSEeikfaQON2ecdw"/>
+    <attributeMappings xmi:id="_T4b6Y3qSEeikfaQON2ecdw" source="_OPhxLXqSEeikfaQON2ecdw" target="_SfNdp3qSEeikfaQON2ecdw"/>
+    <attributeMappings xmi:id="_Vc7L8HqSEeikfaQON2ecdw" source="_OPhxKnqSEeikfaQON2ecdw" target="_SfNdo3qSEeikfaQON2ecdw"/>
+  </tableMappings>
+  <tableMappings xmi:id="_m3QU0HqSEeikfaQON2ecdw" source="_SfubAHqSEeikfaQON2ecdw" target="_mfRSqHqSEeikfaQON2ecdw">
+    <attributeMappings xmi:id="_m3QU0XqSEeikfaQON2ecdw" source="_SfubAXqSEeikfaQON2ecdw" target="_mfRSqXqSEeikfaQON2ecdw"/>
+    <attributeMappings xmi:id="_m3QU0nqSEeikfaQON2ecdw" source="_SfubA3qSEeikfaQON2ecdw" target="_mfRSqnqSEeikfaQON2ecdw"/>
+    <attributeMappings xmi:id="_m3QU03qSEeikfaQON2ecdw" source="_SfubBXqSEeikfaQON2ecdw" target="_mfRSq3qSEeikfaQON2ecdw"/>
+  </tableMappings>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="_OPhxIHqSEeikfaQON2ecdw" name="ANALYTICSCLOUD_DB__WATP_TACSCMDATA" type="DATABASE_TABLE" authoringSchemaName="DB_USER_3" catalogObjectName="analyticscloud.db::WATP_TACSCMDATA" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="_OPhxIXqSEeikfaQON2ecdw" key="sap.afm.description" value="Read data from a catalog or repository object"/>
+    <annotations xmi:id="_OPhxInqSEeikfaQON2ecdw" key="sap.afm.displayName" value="Data Source"/>
+    <annotations xmi:id="_OPhxI3qSEeikfaQON2ecdw" key="sap.afm.layout">
+      <annotations xmi:id="_OPhxJHqSEeikfaQON2ecdw" key="x" value="100"/>
+      <annotations xmi:id="_OPhxJXqSEeikfaQON2ecdw" key="y" value="92"/>
+      <annotations xmi:id="_OPhxJnqSEeikfaQON2ecdw" key="width" value="100"/>
+      <annotations xmi:id="_OPhxJ3qSEeikfaQON2ecdw" key="height" value="64"/>
+    </annotations>
+    <annotations xmi:id="_fUAl0HqSEeikfaQON2ecdw" key="sap.afm.nodeType" value="DataNode"/>
+    <annotations xmi:id="_fUhjMHqSEeikfaQON2ecdw" key="sap.afm.nodeInputs"/>
+    <annotations xmi:id="_fUzQAHqSEeikfaQON2ecdw" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="_fVDHoHqSEeikfaQON2ecdw" key="DATA" value="INPUT_DATA"/>
+    </annotations>
+    <outputs xmi:id="_OPhxKHqSEeikfaQON2ecdw" name="DATA" kind="TABLE">
+      <attributes xmi:id="_OPhxKXqSEeikfaQON2ecdw" name="MANDT" type="NVARCHAR" nullable="false" length="3" scale="0" description="Client"/>
+      <attributes xmi:id="_OPhxKnqSEeikfaQON2ecdw" name="NR" type="NVARCHAR" nullable="false" length="10" scale="0" description="Clarification Case"/>
+      <attributes xmi:id="_OPhxK3qSEeikfaQON2ecdw" name="XML_TIME" type="NVARCHAR" nullable="true" length="19" scale="0" description="Transmission time"/>
+      <attributes xmi:id="_OPhxLHqSEeikfaQON2ecdw" name="XML_LATITUDE" type="DECIMAL" nullable="true" length="15" scale="3" defaultValue="1.5" description="GPS LATITUDE"/>
+      <attributes xmi:id="_OPhxLXqSEeikfaQON2ecdw" name="XML_LONGITUDE" type="DECIMAL" nullable="true" length="15" scale="3" defaultValue="1.5" description="GPS Longitude"/>
+      <attributes xmi:id="_OPhxLnqSEeikfaQON2ecdw" name="XML_CAT" type="NVARCHAR" nullable="true" length="1" scale="0" description="Category"/>
+      <attributes xmi:id="_OPhxL3qSEeikfaQON2ecdw" name="XML_CATTXT" type="NVARCHAR" nullable="true" length="254" scale="0" description="Classify clarification case"/>
+      <attributes xmi:id="_OPhxMHqSEeikfaQON2ecdw" name="XML_PRIO" type="NVARCHAR" nullable="true" length="1" scale="0" description="Clarification Case Priority"/>
+      <attributes xmi:id="_OPhxMXqSEeikfaQON2ecdw" name="XML_USER" type="NVARCHAR" nullable="true" length="60" scale="0" description="Consignor"/>
+      <attributes xmi:id="_OPhxMnqSEeikfaQON2ecdw" name="CAN_REASON_NOTE" type="NVARCHAR" nullable="true" length="254" scale="0" description="Additional note on cancellation"/>
+      <attributes xmi:id="_OPhxM3qSEeikfaQON2ecdw" name="ZZ_USER_ID" type="NVARCHAR" nullable="true" length="14" scale="0" description="Unique user ID for communication purposes"/>
+      <attributes xmi:id="_OPhxNHqSEeikfaQON2ecdw" name="ZZ_GUID" type="NVARCHAR" nullable="true" length="36" scale="0" description="Unique DB ID"/>
+      <attributes xmi:id="_OPhxNXqSEeikfaQON2ecdw" name="ZZ_SENDER" type="NVARCHAR" nullable="true" length="160" scale="0" description="Sender_subject of expulsion"/>
+      <attributes xmi:id="_OPhxNnqSEeikfaQON2ecdw" name="ZZ_SENDER_ID" type="NVARCHAR" nullable="true" length="36" scale="0" description="Unique DB ID"/>
+      <attributes xmi:id="_OPhxN3qSEeikfaQON2ecdw" name="ZZ_SENDER_MAIL" type="NVARCHAR" nullable="true" length="160" scale="0" description="Email address of sender"/>
+      <attributes xmi:id="_OPhxOHqSEeikfaQON2ecdw" name="ZZ_SENDER_LABEL" type="NVARCHAR" nullable="true" length="50" scale="0" description="Comment"/>
+      <attributes xmi:id="_OPhxOXqSEeikfaQON2ecdw" name="ZZ_DESC_GENERAL" type="NVARCHAR" nullable="true" length="200" scale="0" description="General description and summary"/>
+      <attributes xmi:id="_OPhxOnqSEeikfaQON2ecdw" name="ZZ_DESC_ADR" type="NVARCHAR" nullable="true" length="200" scale="0" description="Description of the location"/>
+      <attributes xmi:id="_OPhxO3qSEeikfaQON2ecdw" name="ZZ_GEFORMATTEERD_ADRES" type="NVARCHAR" nullable="true" length="100" scale="0" description="Character 100"/>
+      <attributes xmi:id="_OPhxPHqSEeikfaQON2ecdw" name="ZZ_ADR_STRAAT" type="NVARCHAR" nullable="true" length="50" scale="0" description="Comment"/>
+      <attributes xmi:id="_OPhxPXqSEeikfaQON2ecdw" name="ZZ_ADR_NUMMER" type="NVARCHAR" nullable="true" length="50" scale="0" description="Comment"/>
+      <attributes xmi:id="_OPhxPnqSEeikfaQON2ecdw" name="ZZ_ADR_POSTCODE" type="NVARCHAR" nullable="true" length="50" scale="0" description="Comment"/>
+      <attributes xmi:id="_OPhxP3qSEeikfaQON2ecdw" name="ZZ_ADR_GEMEENTE" type="NVARCHAR" nullable="true" length="50" scale="0" description="Comment"/>
+      <attributes xmi:id="_OPhxQHqSEeikfaQON2ecdw" name="ZZ_LOCATION_TYPE" type="ALPHANUM" nullable="false" length="1" scale="0" description="Location type"/>
+      <attributes xmi:id="_OPhxQXqSEeikfaQON2ecdw" name="ZZ_WASTE_TYPE_CAT" type="NVARCHAR" nullable="true" length="200" scale="0" description="Wastetype category"/>
+      <attributes xmi:id="_OPhxQnqSEeikfaQON2ecdw" name="ZZ_DESC_WASTE" type="NVARCHAR" nullable="true" length="200" scale="0" description="Description of waste"/>
+      <attributes xmi:id="_OPhxQ3qSEeikfaQON2ecdw" name="ZZ_ORIG_TMS" type="DECIMAL" nullable="true" length="5" scale="3" defaultValue="1.5" description="Date and time of case creation at Digipolis"/>
+      <attributes xmi:id="_OPhxRHqSEeikfaQON2ecdw" name="ZZ_FASE" type="ALPHANUM" nullable="false" length="1" scale="0" description="Digipolis Phase"/>
+      <attributes xmi:id="_OPhxRXqSEeikfaQON2ecdw" name="ZZ_FASE_STATE" type="ALPHANUM" nullable="false" length="1" scale="0" description="Digipolis Phase State"/>
+      <attributes xmi:id="_OPhxRnqSEeikfaQON2ecdw" name="ZZ_ORG_REF" type="NVARCHAR" nullable="true" length="50" scale="0" description="Organisation responsible for the execution"/>
+      <attributes xmi:id="_OPhxR3qSEeikfaQON2ecdw" name="ZZ_ORG_REF_ID" type="DATE" nullable="true" length="0" scale="0" description="Unique DB ID"/>
+      <attributes xmi:id="_OPhxSHqSEeikfaQON2ecdw" name="ZZ_ORG_REF_VAT" type="TIME" nullable="true" length="0" scale="0" description="VAT Number"/>
+      <attributes xmi:id="_OPhxSXqSEeikfaQON2ecdw" name="ZZ_POLICE_INV" type="NVARCHAR" nullable="true" length="1" scale="0" description="Police intervention required"/>
+      <attributes xmi:id="_OPhxSnqSEeikfaQON2ecdw" name="ZZ_CASE_MANUAL" type="NVARCHAR" nullable="true" length="1" scale="0" description="Case is created manually"/>
+      <attributes xmi:id="_OPhxS3qSEeikfaQON2ecdw" name="ZZ_PARENT_CASE" type="NVARCHAR" nullable="true" length="10" scale="0" description="Parent Case"/>
+      <attributes xmi:id="_OPhxTHqSEeikfaQON2ecdw" name="ZZ_PARENT_GUID" type="NVARCHAR" nullable="true" length="36" scale="0" description="Unique DB ID"/>
+      <attributes xmi:id="_OPhxTXqSEeikfaQON2ecdw" name="ZZ_LAST_STATUS" type="NVARCHAR" nullable="true" length="32" scale="0" description="GUID"/>
+      <attributes xmi:id="_OPhxTnqSEeikfaQON2ecdw" name="ZZ_WIJZIGINGS_DATUM" type="NVARCHAR" nullable="true" length="50" scale="0" description="Comment"/>
+      <attributes xmi:id="_OPhxT3qSEeikfaQON2ecdw" name="ZZ_GEMAAKT_OP" type="NVARCHAR" nullable="true" length="50" scale="0" description="Comment"/>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:ProcedureNode" xmi:id="_Ok3H8HqSEeikfaQON2ecdw" name="PROCEDURE" type="DATABASE" authoringSchemaName="PINAKIP" procedureName="Pinaki.IVAGO.DataLoad.Procedure::LOAD_GEO_DATA" procedureParameters="_SfNdoHqSEeikfaQON2ecdw _SfubAHqSEeikfaQON2ecdw">
+    <annotations xmi:id="_Ok3H8XqSEeikfaQON2ecdw" key="sap.afm.description" value="Call a stored procedure"/>
+    <annotations xmi:id="_Ok3H8nqSEeikfaQON2ecdw" key="sap.afm.displayName" value="Procedure"/>
+    <annotations xmi:id="_Ok3H83qSEeikfaQON2ecdw" key="sap.afm.layout">
+      <annotations xmi:id="_Ok3H9HqSEeikfaQON2ecdw" key="x" value="341"/>
+      <annotations xmi:id="_Ok3H9XqSEeikfaQON2ecdw" key="y" value="211"/>
+      <annotations xmi:id="_Ok3H9nqSEeikfaQON2ecdw" key="width" value="100"/>
+      <annotations xmi:id="_Ok3H93qSEeikfaQON2ecdw" key="height" value="84"/>
+    </annotations>
+    <annotations xmi:id="_SgOKQHqSEeikfaQON2ecdw" key="sap.afm.isProcedureReadOnly" value="true"/>
+    <annotations xmi:id="_fVyugHqSEeikfaQON2ecdw" key="sap.afm.nodeType" value="ProcedureNode"/>
+    <annotations xmi:id="_fWR2sHqSEeikfaQON2ecdw" key="sap.afm.nodeInputs">
+      <annotations xmi:id="_fWi8cHqSEeikfaQON2ecdw" key="INPUT_DATA" value="DATA"/>
+    </annotations>
+    <annotations xmi:id="_fXbGMHqSEeikfaQON2ecdw" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="_fXtaEHqSEeikfaQON2ecdw" key="OUTPUT_TABLE" value="DATA_2"/>
+    </annotations>
+    <inputs xmi:id="_SfNdoHqSEeikfaQON2ecdw" name="INPUT_DATA" kind="TABLE">
+      <attributes xmi:id="_SfNdoXqSEeikfaQON2ecdw" name="MANDT" type="NVARCHAR" nullable="false" length="3" scale="0">
+        <annotations xmi:id="_SfNdonqSEeikfaQON2ecdw" key="sap.afm.isReadOnly" value="true"/>
+      </attributes>
+      <attributes xmi:id="_SfNdo3qSEeikfaQON2ecdw" name="CASENR" type="NVARCHAR" nullable="false" length="10" scale="0">
+        <annotations xmi:id="_SfNdpHqSEeikfaQON2ecdw" key="sap.afm.isReadOnly" value="true"/>
+      </attributes>
+      <attributes xmi:id="_SfNdpXqSEeikfaQON2ecdw" name="XML_LATITUDE" type="DECIMAL" nullable="true" length="15" scale="12">
+        <annotations xmi:id="_SfNdpnqSEeikfaQON2ecdw" key="sap.afm.isReadOnly" value="true"/>
+      </attributes>
+      <attributes xmi:id="_SfNdp3qSEeikfaQON2ecdw" name="XML_LONGITUDE" type="DECIMAL" nullable="true" length="15" scale="12">
+        <annotations xmi:id="_SfNdqHqSEeikfaQON2ecdw" key="sap.afm.isReadOnly" value="true"/>
+      </attributes>
+    </inputs>
+    <outputs xmi:id="_SfubAHqSEeikfaQON2ecdw" name="OUTPUT_TABLE" kind="TABLE">
+      <attributes xmi:id="_SfubAXqSEeikfaQON2ecdw" name="MANDT" type="NVARCHAR" nullable="true" length="3" scale="0">
+        <annotations xmi:id="_SfubAnqSEeikfaQON2ecdw" key="sap.afm.isReadOnly" value="true"/>
+      </attributes>
+      <attributes xmi:id="_SfubA3qSEeikfaQON2ecdw" name="CASENR" type="NVARCHAR" nullable="false" length="10" scale="0">
+        <annotations xmi:id="_SfubBHqSEeikfaQON2ecdw" key="sap.afm.isReadOnly" value="true"/>
+      </attributes>
+      <attributes xmi:id="_SfubBXqSEeikfaQON2ecdw" name="GEO_ID" type="ST_GEOMETRY" nullable="true" length="0" scale="0">
+        <annotations xmi:id="_SfubBnqSEeikfaQON2ecdw" key="sap.afm.isReadOnly" value="true"/>
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="_mfRSoHqSEeikfaQON2ecdw" name="IVAGO_GEO_DATA" type="DATABASE_TABLE" authoringSchemaName="PINAKIP" catalogObjectName="IVAGO_GEO_DATA" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="_mfRSoXqSEeikfaQON2ecdw" key="sap.afm.description" value="Write data to a catalog object"/>
+    <annotations xmi:id="_mfRSonqSEeikfaQON2ecdw" key="sap.afm.displayName" value="Data Sink"/>
+    <annotations xmi:id="_mfRSo3qSEeikfaQON2ecdw" key="sap.afm.layout">
+      <annotations xmi:id="_mfRSpHqSEeikfaQON2ecdw" key="x" value="539"/>
+      <annotations xmi:id="_mfRSpXqSEeikfaQON2ecdw" key="y" value="115"/>
+      <annotations xmi:id="_mfRSpnqSEeikfaQON2ecdw" key="width" value="100"/>
+      <annotations xmi:id="_mfRSp3qSEeikfaQON2ecdw" key="height" value="64"/>
+    </annotations>
+    <annotations xmi:id="_oFYU0HqSEeikfaQON2ecdw" key="sap.afm.nodeType" value="DataNode"/>
+    <annotations xmi:id="_oF7HYHqSEeikfaQON2ecdw" key="sap.afm.nodeInputs">
+      <annotations xmi:id="_oGLmEHqSEeikfaQON2ecdw" key="DATA_2" value="OUTPUT_TABLE"/>
+    </annotations>
+    <annotations xmi:id="_oG9pMHqSEeikfaQON2ecdw" key="sap.afm.nodeOutputs"/>
+    <inputs xmi:id="_mfRSqHqSEeikfaQON2ecdw" name="DATA_2" kind="TABLE">
+      <attributes xmi:id="_mfRSqXqSEeikfaQON2ecdw" name="MANDT" type="NVARCHAR" nullable="true" length="3" scale="0"/>
+      <attributes xmi:id="_mfRSqnqSEeikfaQON2ecdw" name="CASENR" type="NVARCHAR" nullable="false" length="10" scale="0"/>
+      <attributes xmi:id="_mfRSq3qSEeikfaQON2ecdw" name="GEO_ID" type="ST_GEOMETRY" nullable="true" length="0" scale="0"/>
+    </inputs>
+  </nodes>
+</flowgraph:ContainerNode>

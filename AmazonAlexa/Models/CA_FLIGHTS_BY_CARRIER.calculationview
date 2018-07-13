@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="CA_FLIGHTS_BY_CARRIER" applyPrivilegeType="ANALYTIC_PRIVILEGE" checkAnalyticPrivileges="true" defaultClient="crossClient" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" translationRelevant="true" visibility="reportingEnabled" calculationScenarioType="TREE_BASED" dataCategory="CUBE" enforceSqlExecution="false" executionSemantic="UNDEFINED" outputViewType="Aggregation">
+  <descriptions defaultDescription="CA_FLIGHTS_BY_CARRIER"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="27"/>
+  <dataSources>
+    <DataSource id="SFLIGHT" type="DATA_BASE_TABLE">
+      <viewAttributes allViewAttributes="true"/>
+      <columnObject schemaName="PINAKIP" columnObjectName="SFLIGHT"/>
+    </DataSource>
+    <DataSource id="SCARR" type="DATA_BASE_TABLE">
+      <viewAttributes allViewAttributes="true"/>
+      <columnObject schemaName="PINAKIP" columnObjectName="SCARR"/>
+    </DataSource>
+  </dataSources>
+  <calculationViews>
+    <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="leftOuter" cardinality="C1_1">
+      <descriptions/>
+      <viewAttributes>
+        <viewAttribute id="CARRID"/>
+        <viewAttribute id="CARRNAME"/>
+        <viewAttribute id="PRICE"/>
+        <viewAttribute id="CURRENCY"/>
+        <viewAttribute id="JOIN$MANDT$MANDT" hidden="true"/>
+        <viewAttribute id="JOIN$CARRID$CARRID" hidden="true"/>
+      </viewAttributes>
+      <calculatedViewAttributes/>
+      <input node="#SFLIGHT">
+        <mapping xsi:type="Calculation:AttributeMapping" target="PRICE" source="PRICE"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="CURRENCY" source="CURRENCY"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$MANDT$MANDT" source="MANDT"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$CARRID$CARRID" source="CARRID"/>
+      </input>
+      <input node="#SCARR">
+        <mapping xsi:type="Calculation:AttributeMapping" target="CARRID" source="CARRID"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="CARRNAME" source="CARRNAME"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$MANDT$MANDT" source="MANDT"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$CARRID$CARRID" source="CARRID"/>
+      </input>
+      <joinAttribute name="JOIN$MANDT$MANDT"/>
+      <joinAttribute name="JOIN$CARRID$CARRID"/>
+    </calculationView>
+    <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+      <descriptions/>
+      <viewAttributes>
+        <viewAttribute id="CARRID"/>
+        <viewAttribute id="CARRNAME"/>
+        <viewAttribute id="PRICE"/>
+        <viewAttribute id="CURRENCY"/>
+      </viewAttributes>
+      <calculatedViewAttributes>
+        <calculatedViewAttribute datatype="VARCHAR" id="CARRNAME_L" length="30" expressionLanguage="COLUMN_ENGINE">
+          <formula>lower(&quot;CARRNAME&quot;)</formula>
+        </calculatedViewAttribute>
+      </calculatedViewAttributes>
+      <input node="#Join_1">
+        <mapping xsi:type="Calculation:AttributeMapping" target="CARRID" source="CARRID"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="CARRNAME" source="CARRNAME"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="PRICE" source="PRICE"/>
+        <mapping xsi:type="Calculation:AttributeMapping" target="CURRENCY" source="CURRENCY"/>
+      </input>
+    </calculationView>
+  </calculationViews>
+  <logicalModel id="Projection_1">
+    <descriptions/>
+    <attributes>
+      <attribute id="CARRNAME" order="1" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CARRNAME"/>
+        <keyMapping columnObjectName="Projection_1" columnName="CARRNAME"/>
+      </attribute>
+      <attribute id="CARRNAME_L" order="3" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CARRNAME_L"/>
+        <keyMapping columnObjectName="Projection_1" columnName="CARRNAME_L"/>
+      </attribute>
+    
+      <attribute id="CURRENCY" order="4" displayAttribute="false" attributeHierarchyActive="false">
+        <descriptions defaultDescription="CURRENCY"/>
+        <keyMapping columnObjectName="Projection_1" columnName="CURRENCY"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures>
+      <measure id="PRICE" order="2" aggregationType="sum" measureType="amount" semanticType="amount">
+        <descriptions defaultDescription="PRICE"/>
+        <unitCurrencyAttribute attributeName="CURRENCY"/>
+        <measureMapping columnObjectName="Projection_1" columnName="PRICE"/>
+      </measure>
+    </baseMeasures>
+    <calculatedMeasures/>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="150"/>
+        <rectangleSize height="0" width="0"/>
+      </shape>
+      <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+        <upperLeftCorner x="120" y="360"/>
+        <rectangleSize height="-1" width="-1"/>
+      </shape>
+      <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+        <upperLeftCorner x="70" y="240"/>
+        <rectangleSize height="-1" width="-1"/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>

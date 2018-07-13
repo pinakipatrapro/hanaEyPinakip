@@ -1,0 +1,81 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+ xmlns:l="sap.ui.layout" xmlns:micro="sap.suite.ui.microchart"
+ xmlns:viz.data="sap.viz.ui5.data"
+xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:vbm="sap.ui.vbm"
+xmlns:semantic="sap.m.semantic" xmlns:suite="sap.suite.ui.commons" 
+xmlns:viz="sap.viz.ui5.controls" 
+controllerName="controllers.home" xmlns:html="http://www.w3.org/1999/xhtml">
+
+
+<!-- <Image src= "UI/img/background.PNG" /> -->
+
+<Page id="idPageHome" showHeader="false" class="clsBacgImg">
+
+<content>
+
+<HBox width="100%" height="44%" alignItems="Start" justifyContent="Center" class="clsMainHBox">
+
+<VBox width="100%" alignItems= "Center" justifyContent= "Center">
+<HBox width="100%" class="clsStyleForText2" alignItems= "Start" justifyContent= "Center">
+<Label text="{i18n>appTitleShort}" />
+<Label text="{i18n>trademark}" />
+</HBox>
+
+<VBox width="65%">
+<VBox class="introLineCss" width="100%" alignItems= "Center" justifyContent= "Center">
+<Text id="introLines" text=""  tooltip=" " class="homeintro defaultCursor" textAlign="Center" wrapping="true" />
+</VBox>
+</VBox>
+
+
+</VBox>
+</HBox>
+
+<HBox width="100%" height="50%" alignItems="Center" justifyContent="Center" class="clsMainHBox">
+
+<VBox id="tile1" class="boxDesign" >
+
+<VBox  alignItems="Center" justifyContent="Center" class="clsLabl">
+<Label text= "{i18n>tile1Title}" />
+<Label text= "{i18n>tile1Subtitle}" />
+<Label text= "{i18n>tile1Desc}" />
+</VBox>
+<VBox height="50%" alignItems="Center" justifyContent="Center">
+<Button icon="sap-icon://upload-to-cloud"  class="clsButtonDes" press="handleTile1">
+</Button>
+</VBox>
+
+</VBox>
+
+
+<VBox id="tile3" class="boxDesign">
+
+<VBox  alignItems="Center" justifyContent="Center" class="clsLabl">
+<Label text= "{i18n>tile3Title}" />
+<Label text= "{i18n>tile3Subtitle}" />
+<Label text= "{i18n>tile3Desc}" />
+</VBox>
+<VBox height="50%" alignItems="Center" justifyContent="Center">
+<Button icon="sap-icon://vertical-bar-chart-2"  class="clsButtonDes" press="handleTile3">
+</Button>
+</VBox>
+
+</VBox>
+
+</HBox>
+
+</content>
+
+<!--	<footer>
+		<OverflowToolbar id="masterFooter" visible="true" class="homeFooter sapUiSizeCompact">
+				<ToolbarSpacer/>
+			
+				<Button type="Transparent" class="quickGuideBtn" press="navToQuickGuide" text="{i18n>quickGuide}" icon="sap-icon://sys-help"/>
+
+			</OverflowToolbar>
+		</footer>-->
+		
+		
+</Page>
+
+</core:View>
