@@ -1,3 +1,4 @@
+var mode = $.request.parameters.get('mode');
 
 $.import("Pinaki.RandomDataGenerator.Scripts.Libs", "costCenter");
 var costCenter = $.Pinaki.RandomDataGenerator.Scripts.Libs.costCenter;
@@ -34,7 +35,14 @@ $.import("Pinaki.RandomDataGenerator.Scripts.Libs", "actualCostAccounting");
 var actualCostAccounting = $.Pinaki.RandomDataGenerator.Scripts.Libs.actualCostAccounting;
 
 
+//Data generator for the CIO related tables
+//Author : Pinaki Patra on behalf of EY
+//Date : 13-07-2018
+//Methods Supported : GET
+
+
 var dataGenerator = function(e){
+	this.connection = $.db.getConnection();
 	this.outputBody = {
 			text : "Successfully generated CIO data",
 			messages : [] //format- {text : '',status:''}
@@ -58,14 +66,12 @@ var dataGenerator = function(e){
 };
 dataGenerator.prototype = {
 		generateRandDate : function(dateFrom,dateTo){
-			var connection = $.db.getConnection();
-			var sql = "select top 1 DATE_SAP from M_TIME_DIMENSION where DATE_SAP between '"+dateFrom+"' and '"+ dateTo+"'order by rand()"
-			var statement = connection.prepareStatement(sql);
-			var resultSet = statement.executeQuery();
-			while (resultSet.next()) {
-				return resultSet.getString(1);
-			}
-			connection.close();
+			dateFrom = new Date(dateFrom.replace(/(\d{4})(\d{2})(\d{2})/g, '$1-$2-$3'))
+			dateTo = new Date(dateTo.replace(/(\d{4})(\d{2})(\d{2})/g, '$1-$2-$3'))
+			dateFrom = dateFrom.getTime();
+			dateTo = dateTo.getTime();
+			var returnDate =  new Date(dateFrom + Math.random() * (dateTo - dateFrom));
+			return returnDate.toISOString().substring(0, 10).replace(/-/g, "");
 		},
 		generateRandomDecimal : function(lowerNumber,upperNumber){
 			return Math.floor(Math.random() * (upperNumber - lowerNumber + 1)) + lowerNumber;
@@ -91,17 +97,16 @@ dataGenerator.prototype = {
 			return text;
 		},
 		getDistinctFromTableColumn : function(tableName,columnName,whereStatement){
-			var connection = $.db.getConnection();
+			var connection = this.connection;
 			var sql = 'select top 1 cast("'+columnName+'" as varchar(1000)) from '+tableName+' where '+whereStatement+' order by rand() ';
 			var statement = connection.prepareStatement(sql);
 			var resultSet = statement.executeQuery();
 			while (resultSet.next()) {
 				return resultSet.getString(1);
 			}
-			connection.close();
 		},
 		getTableColumnAsDistinctArray : function(tableName,columnName,whereStatement){
-			var connection = $.db.getConnection();
+			var connection = this.connection;
 			var aColumnDistinctEntries = [];
 			var sql = 'select distinct cast("'+columnName+'" as varchar(1000)) from '+tableName+' where '+whereStatement;
 			var statement = connection.prepareStatement(sql);
@@ -109,11 +114,10 @@ dataGenerator.prototype = {
 			while (resultSet.next()) {
 				aColumnDistinctEntries.push(resultSet.getString(1))
 			}
-			connection.close();
 			return aColumnDistinctEntries;
 		},
 		getTableColumnAsArray : function(tableName,columnName,whereStatement){
-			var connection = $.db.getConnection();
+			var connection = this.connection;
 			var aColumnEntries = [];
 			var sql = 'select  cast("'+columnName+'" as varchar(1000)) from '+tableName+' where '+whereStatement;
 			var statement = connection.prepareStatement(sql);
@@ -121,19 +125,34 @@ dataGenerator.prototype = {
 			while (resultSet.next()) {
 				aColumnEntries.push(resultSet.getString(1))
 			}
-			connection.close();
 			return aColumnEntries;
 		},
 		deleteBaseTables : function(){
 			this.aBaseTables.forEach(function(e){
-				var connection = $.db.getConnection();
+				var connection = genObj.connection;
 				var aColumnEntries = [];
 				var sql = 'delete from '+ e;
 				var statement = connection.prepareStatement(sql);
 				var resultSet = statement.executeQuery();
 				connection.commit();
-				connection.close();
 			})
+		},
+		getStatus : function(){
+			var aStatus = [];
+			this.aBaseTables.forEach(function(e){
+				var connection = genObj.connection;
+				var aColumnEntries = [];
+				var sql = 'select count(*) from '+ e;
+				var statement = connection.prepareStatement(sql);
+				var resultSet = statement.executeQuery();
+				while (resultSet.next()) {
+					aStatus.push({
+						count : resultSet.getString(1),
+						tableName : e
+					})
+				}
+			});
+			return aStatus;
 		},
 		addMessage : function(text,status){
 			this.outputBody.messages.push({
@@ -141,33 +160,44 @@ dataGenerator.prototype = {
 				status : status
 			})
 		},
+		closeConnection : function(){
+			this.connection.close();
+		},
 		setBody : function(){
 			$.response.setBody(JSON.stringify(this.outputBody));
 		}
 };
+if(mode == 'status'){
+	var genObj =new dataGenerator();
+	$.response.setBody(JSON.stringify(genObj.getStatus()));
+}else{
+	var genObj =new dataGenerator();
 
-var genObj =new dataGenerator();
+	genObj.deleteBaseTables();
 
-genObj.deleteBaseTables();
+	costPool.loadData(dataGenerator);
+	chartOfAccount.loadData(dataGenerator); //Dependency Err - Trigger late
+	costCenter.loadData(dataGenerator);
+	projects.loadData(dataGenerator);
 
-costPool.loadData(dataGenerator);
-costCenter.loadData(dataGenerator);
-projects.loadData(dataGenerator);
+	itVendor.loadData(dataGenerator);
+	creditorAccount.loadData(dataGenerator);
 
-itVendor.loadData(dataGenerator);
-creditorAccount.loadData(dataGenerator);
+	purchaseOrder.loadData(dataGenerator);
+	reportingUnit.loadData(dataGenerator);
 
-purchaseOrder.loadData(dataGenerator);
-reportingUnit.loadData(dataGenerator);
-
-chartOfAccount.loadData(dataGenerator); //Dependency Err - Trigger late
-wbs.loadData(dataGenerator);
-invoiceDocument.loadData(dataGenerator);
-actualCostAccounting.loadData(dataGenerator);
-
-
-
-//Update Status
-genObj.setBody()
+	
+	wbs.loadData(dataGenerator);
+	invoiceDocument.loadData(dataGenerator);
+	
+	actualCostAccounting.loadData(dataGenerator);
 
 
+
+//	Close Connection
+	genObj.closeConnection();
+
+//	Update Status
+	genObj.setBody();
+
+}

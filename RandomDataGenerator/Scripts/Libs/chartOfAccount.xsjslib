@@ -2,14 +2,13 @@
 
 function loadData(dataGenerator){
 	var counter = 0;
-	var connection = $.db.getConnection();
 	var aDistinctChartOfAccounts = genObj.getTableColumnAsDistinctArray('"PINAKIP"."analyticscloud.db.CIO::CostPool"','ChartsofAccountID',' 1=1 ');
 	var aDistinctGLAccountNumber = genObj.getTableColumnAsDistinctArray('"PINAKIP"."analyticscloud.db.CIO::CostPool"','GLAccountNumber',' 1=1 ');
 
 	for(var i = 0 ; i < aDistinctGLAccountNumber.length; i++){
 
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::ChartofAccounts\" values(?,?,?,?)";
-		var statement = connection.prepareStatement(sql);
+		var statement = genObj.connection.prepareStatement(sql);
 
 		var ChartOfAccountsID = aDistinctChartOfAccounts[i];
 		var GLAccountNumber = aDistinctGLAccountNumber[i];
@@ -32,6 +31,5 @@ function loadData(dataGenerator){
 		counter++;
 	}
 	genObj.addMessage("Total number of chart of account generated : "+ counter , "Success")
-	connection.commit();
-	connection.close();
+	genObj.connection.commit();
 }

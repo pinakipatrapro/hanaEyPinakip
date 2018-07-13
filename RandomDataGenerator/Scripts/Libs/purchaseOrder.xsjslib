@@ -2,13 +2,12 @@
 
 function loadData(dataGenerator){
 	var counter = 0;
-	var connection = $.db.getConnection();
 	var aDistinctCreditorAccountNum = genObj.getTableColumnAsDistinctArray('"PINAKIP"."analyticscloud.db.CIO::CreditorAccount"','CreditorAccNumber',' 1=1 ');
 
-	for(var i = 0 ; i < 5; i++){
+	for(var i = 0 ; i < 1000; i++){
 
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::PurchaseOrders\" values(?,?,?,?,?,?,?,?,?)";
-		var statement = connection.prepareStatement(sql);
+		var statement = genObj.connection.prepareStatement(sql);
 		
 		var poDocNum = genObj.generateRandomAlphaNum(11,{
 			aPossibilities : '1234567890',
@@ -55,6 +54,5 @@ function loadData(dataGenerator){
 		
 	}
 	genObj.addMessage("Total number of purchase orders generated : "+ counter , "Success")
-	connection.commit();
-	connection.close();
+	genObj.connection.commit();
 }

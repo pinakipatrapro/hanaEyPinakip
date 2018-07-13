@@ -2,11 +2,10 @@
 
 function loadData(dataGenerator){
 	var counter = 0;
-	var connection = $.db.getConnection();
 	for(var i = 0 ; i < genObj.costPoolName.length; i++){
 		
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::CostPool\" values(?,?,?,?,?)";
-		var statement = connection.prepareStatement(sql);
+		var statement = genObj.connection.prepareStatement(sql);
 		
 		var costPoolID = genObj.generateRandomAlphaNum(7,{
 			aPossibilities : '1234567890',
@@ -32,10 +31,9 @@ function loadData(dataGenerator){
 		statement.setString(4,ChartsofAccountID);
 		statement.setString(5,GLAccountNumber);
 		var resultSet= statement.executeQuery();
-		connection.commit();
+		genObj.connection.commit();
 		counter++;
 	}
 	
 	genObj.addMessage("Total number of cost pools generated : "+ counter , "Success")
-	connection.close();
 }

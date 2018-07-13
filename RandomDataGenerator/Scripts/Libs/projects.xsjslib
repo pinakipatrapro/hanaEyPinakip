@@ -2,12 +2,11 @@
 
 function loadData(dataGenerator){
 	var counter = 0;
-	var connection = $.db.getConnection();
 
 	for(var i = 0 ; i < genObj.projectName.length; i++){
 
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::Projects\" values(?,?,?,?,?,?,?,?,?,?,?,?)";
-		var statement = connection.prepareStatement(sql);
+		var statement = genObj.connection.prepareStatement(sql);
 
 		var projectId = genObj.generateRandomAlphaNum(11,{
 			aPossibilities : '1234567890',
@@ -72,11 +71,9 @@ function loadData(dataGenerator){
 		statement.setString(12,projectBudgetCurrency);
 
 		var resultSet= statement.executeQuery();
-		connection.commit();
 		counter++;
 
 	}
-
+	genObj.connection.commit();
 	genObj.addMessage("Total number of projects generated : "+ counter , "Success");
-	connection.close();
 }

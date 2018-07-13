@@ -2,7 +2,6 @@
 
 function loadData(dataGenerator){
 	var counter = 0;
-	var connection = $.db.getConnection();
 
 	var tableName = '"PINAKIP"."analyticscloud.db.CIO::PurchaseOrders"';
 	var aCreditorAccountNum = genObj.getTableColumnAsArray(tableName,'CreditorAccNumber',' 1=1 ');
@@ -18,7 +17,7 @@ function loadData(dataGenerator){
 	for(var i = 0 ; i < poDocNumber.length; i++){
 
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::Invoices\" values(?,?,?,?,?,?,?,?,?,?,?)";
-		var statement = connection.prepareStatement(sql);
+		var statement = genObj.connection.prepareStatement(sql);
 
 		var InvDocNum = genObj.generateRandomAlphaNum(11,{
 			aPossibilities : '1234567890',
@@ -58,7 +57,6 @@ function loadData(dataGenerator){
 		var resultSet= statement.executeQuery();
 		counter++;
 	}
-	connection.commit();
+	genObj.connection.commit();
 	genObj.addMessage("Total number of invoice documents generated : "+ counter , "Success")
-	connection.close();
 }

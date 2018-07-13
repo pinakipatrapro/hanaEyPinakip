@@ -2,7 +2,6 @@
 
 function loadData(dataGenerator){
 	var counter = 0;
-	var connection = $.db.getConnection(); 
 	//Declare F-Key Tables
 	var invDocTable = '"PINAKIP"."analyticscloud.db.CIO::Invoices"';
 	var reportingUnitTable = '"PINAKIP"."analyticscloud.db.CIO::ReportingUnit"';
@@ -30,7 +29,7 @@ function loadData(dataGenerator){
 	for(var i = 0 ; i < aInvDocItemNumber.length; i++){
 
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::AccountingDocumentsActuals\" values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-		var statement = connection.prepareStatement(sql);
+		var statement = genObj.connection.prepareStatement(sql);
 
 		var companyCode = genObj.generateRandomAlphaNum(1,{
 			aPossibilities : aCompanyCodes,
@@ -127,10 +126,9 @@ function loadData(dataGenerator){
 		
 		var resultSet= statement.executeQuery();
 		counter++;
-		connection.commit();
+		genObj.connection.commit();
 
 	}
 
 	genObj.addMessage("Total number of actual cost accounting generated : "+ counter , "Success")
-	connection.close();
 }

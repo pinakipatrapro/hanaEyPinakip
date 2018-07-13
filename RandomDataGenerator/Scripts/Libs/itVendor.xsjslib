@@ -2,11 +2,10 @@
 
 function loadData(dataGenerator){
 	var counter = 0;
-	var connection = $.db.getConnection();
 	for(var i = 0 ; i < 100; i++){
 		
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::ITVendors\" values(?,?,?,?,?)";
-		var statement = connection.prepareStatement(sql);
+		var statement = genObj.connection.prepareStatement(sql);
 		
 		var vendorId = genObj.generateRandomAlphaNum(10,{
 			aPossibilities : '1234567890',
@@ -31,10 +30,9 @@ function loadData(dataGenerator){
 		statement.setString(5,VendorType);
 		
 		var resultSet= statement.executeQuery();
-		connection.commit();
+		genObj.connection.commit();
 		counter++;
 
 	}
 	genObj.addMessage("Total number of Vendors generated : "+ counter , "Success")
-	connection.close();
 }

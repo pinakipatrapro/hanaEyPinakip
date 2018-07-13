@@ -1,12 +1,14 @@
-/*Load Cost Center data*/
-
+/**
+ * Auto generates data for the CostCenter table
+ * @param dataGenerator 
+ * @returns
+ */
 function loadData(dataGenerator){
 	var counter = 0;
-	var connection = $.db.getConnection();
 	for(var i = 0 ; i < genObj.distinctCostCenteres.length; i++){
 		
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::CostCenter\" values(?,?,?,?,?)";
-		var statement = connection.prepareStatement(sql);
+		var statement = genObj.connection.prepareStatement(sql);
 		
 		var costCenterID = genObj.generateRandomAlphaNum(8,{
 			aPossibilities : '1234567890',
@@ -36,11 +38,10 @@ function loadData(dataGenerator){
 		statement.setInteger(4,levelCCHierarchy);
 		statement.setString(5,parentCostCenter);
 		var resultSet= statement.executeQuery();
-		connection.commit();
+		genObj.connection.commit();
 		counter++;
 	}
 	
 
 	genObj.addMessage("Total number of cost centers generated : "+ counter , "Success")
-	connection.close();
 }
