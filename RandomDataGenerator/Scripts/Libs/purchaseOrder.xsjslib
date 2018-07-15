@@ -4,7 +4,7 @@ function loadData(dataGenerator){
 	var counter = 0;
 	var aDistinctCreditorAccountNum = genObj.getTableColumnAsDistinctArray('"PINAKIP"."analyticscloud.db.CIO::CreditorAccount"','CreditorAccNumber',' 1=1 ');
 
-	for(var i = 0 ; i < 1000; i++){
+	for(var i = 0 ; i < genObj.noOfRecords; i++){
 
 		var sql = 	"insert into \"PINAKIP\".\"analyticscloud.db.CIO::PurchaseOrders\" values(?,?,?,?,?,?,?,?,?)";
 		var statement = genObj.connection.prepareStatement(sql);
